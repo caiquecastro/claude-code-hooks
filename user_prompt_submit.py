@@ -1,4 +1,13 @@
-#!/opt/homebrew/bin/python3.13
+#!/usr/bin/env -S uv run
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#   "openai",
+#   "pocket-tts",
+#   "python-dotenv",
+#   "sounddevice",
+# ]
+# ///
 """
 Claude Code UserPromptSubmit hook — roasts the user's prompt via TTS.
 Generates a sharp/critical comment using an LLM, then speaks it via pocket-tts.
@@ -16,7 +25,6 @@ VOICE = "hf://kyutai/tts-voices/alba-mackenna/casual.wav"
 def get_roast(prompt: str) -> str:
     import os
     from pathlib import Path
-
     from dotenv import load_dotenv
     from openai import OpenAI
 
