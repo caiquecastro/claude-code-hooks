@@ -29,7 +29,7 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 MODEL = "anthropic/claude-haiku-4-5"
-VOICE = "hf://kyutai/tts-voices/alba-mackenna/casual.wav"
+VOICE = "alba"  # catalog voices: alba, marius, javert, jean, fantine, cosette, eponine, azelma
 
 
 def get_roast(prompt: str) -> str:
