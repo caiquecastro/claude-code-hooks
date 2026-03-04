@@ -1,16 +1,16 @@
-#!/usr/bin/python3
+#!/opt/homebrew/bin/python3.13
 """
 Claude Code UserPromptSubmit hook — roasts the user's prompt via TTS.
-Generates a sharp/critical comment using Claude Haiku, then speaks it.
-macOS: uses the built-in `say` command.
+Generates a sharp/critical comment using an LLM, then speaks it via pocket-tts.
+Falls back to macOS `say` if pocket-tts is unavailable.
 """
 
 import json
 import subprocess
 import sys
 
-
 MODEL = "anthropic/claude-haiku-4-5"
+VOICE = "hf://kyutai/tts-voices/alba-mackenna/casual.wav"
 
 
 def get_roast(prompt: str) -> str:
@@ -46,6 +46,32 @@ def get_roast(prompt: str) -> str:
     return response.choices[0].message.content.strip()
 
 
+def speak_pocket_tts(text: str) -> None:
+    import sounddevice as sd
+    from pocket_tts import TTSModel
+
+    tts = TTSModel.load_model()
+    voice_state = tts.get_state_for_audio_prompt(VOICE)
+    audio = tts.generate_audio(voice_state, text)
+    sd.play(audio.numpy(), samplerate=tts.sample_rate)
+    sd.wait()
+
+
+def speak_say(text: str) -> None:
+    subprocess.Popen(
+        ["say", text],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+
+
+def speak(text: str) -> None:
+    try:
+        speak_pocket_tts(text)
+    except Exception:
+        speak_say(text)
+
+
 def main():
     try:
         payload = json.load(sys.stdin)
@@ -58,15 +84,10 @@ def main():
 
     try:
         roast = get_roast(prompt)
-    except Exception as e:
-        print(e)
+    except Exception:
         roast = prompt
 
-    subprocess.Popen(
-        ["say", roast],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-    )
+    speak(roast)
 
 
 if __name__ == "__main__":
