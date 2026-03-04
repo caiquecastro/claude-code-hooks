@@ -15,8 +15,18 @@ Falls back to macOS `say` if pocket-tts is unavailable.
 """
 
 import json
+import logging
 import subprocess
 import sys
+from pathlib import Path
+
+LOG_FILE = Path(__file__).parent / "hook.log"
+logging.basicConfig(
+    filename=LOG_FILE,
+    level=logging.DEBUG,
+    format="%(asctime)s %(levelname)s %(message)s",
+)
+log = logging.getLogger(__name__)
 
 MODEL = "anthropic/claude-haiku-4-5"
 VOICE = "hf://kyutai/tts-voices/alba-mackenna/casual.wav"
@@ -24,7 +34,6 @@ VOICE = "hf://kyutai/tts-voices/alba-mackenna/casual.wav"
 
 def get_roast(prompt: str) -> str:
     import os
-    from pathlib import Path
     from dotenv import load_dotenv
     from openai import OpenAI
 
@@ -34,6 +43,7 @@ def get_roast(prompt: str) -> str:
         api_key=os.environ["OPENROUTER_API_KEY"],
         base_url="https://openrouter.ai/api/v1",
     )
+    log.debug("Requesting roast for prompt: %r", prompt[:80])
     response = client.chat.completions.create(
         model=MODEL,
         max_tokens=100,
@@ -51,13 +61,16 @@ def get_roast(prompt: str) -> str:
             {"role": "user", "content": prompt},
         ],
     )
-    return response.choices[0].message.content.strip()
+    roast = response.choices[0].message.content.strip()
+    log.debug("Roast: %r", roast)
+    return roast
 
 
 def speak_pocket_tts(text: str) -> None:
     import sounddevice as sd
     from pocket_tts import TTSModel
 
+    log.debug("Speaking via pocket-tts")
     tts = TTSModel.load_model()
     voice_state = tts.get_state_for_audio_prompt(VOICE)
     audio = tts.generate_audio(voice_state, text)
@@ -66,6 +79,7 @@ def speak_pocket_tts(text: str) -> None:
 
 
 def speak_say(text: str) -> None:
+    log.debug("Speaking via say")
     subprocess.Popen(
         ["say", text],
         stdout=subprocess.DEVNULL,
@@ -77,6 +91,7 @@ def speak(text: str) -> None:
     try:
         speak_pocket_tts(text)
     except Exception:
+        log.exception("pocket-tts failed, falling back to say")
         speak_say(text)
 
 
@@ -90,9 +105,11 @@ def main():
     if not prompt:
         sys.exit(0)
 
+    log.debug("Hook triggered")
     try:
         roast = get_roast(prompt)
     except Exception:
+        log.exception("get_roast failed, speaking raw prompt")
         roast = prompt
 
     speak(roast)
