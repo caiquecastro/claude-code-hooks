@@ -20,7 +20,8 @@ import subprocess
 import sys
 from pathlib import Path
 
-LOG_FILE = Path(__file__).parent / "hook.log"
+ROOT = Path(__file__).parent.parent
+LOG_FILE = ROOT / "hook.log"
 logging.basicConfig(
     filename=LOG_FILE,
     level=logging.DEBUG,
@@ -37,7 +38,7 @@ def get_roast(prompt: str) -> str:
     from dotenv import load_dotenv
     from openai import OpenAI
 
-    load_dotenv(Path(__file__).parent / ".env")
+    load_dotenv(ROOT / ".env")
 
     client = OpenAI(
         api_key=os.environ["OPENROUTER_API_KEY"],
