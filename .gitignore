@@ -1,2 +1,4 @@
 .env
 hook.log
+__pycache__/
+*.pyc

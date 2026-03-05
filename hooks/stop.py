@@ -16,7 +16,7 @@ import json
 import logging
 import sys
 
-from shared import LOG_FILE, MODEL, speak, get_openrouter_client
+from shared import LOG_FILE, MODEL, get_openrouter_client, speak
 
 logging.basicConfig(
     filename=LOG_FILE,
