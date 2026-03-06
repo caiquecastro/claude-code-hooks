@@ -101,8 +101,8 @@ Available voices: `alba`, `marius`, `javert`, `jean`, `fantine`, `cosette`, `epo
 
 ```sh
 # Test the UserPromptSubmit hook
-python hooks/test_hook.py
-python hooks/test_hook.py "your prompt here"
+python hooks/test_user_prompt_submit.py
+python hooks/test_user_prompt_submit.py "your prompt here"
 
 # Test the Stop hook
 python hooks/test_stop.py
