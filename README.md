@@ -12,6 +12,10 @@ A `UserPromptSubmit` hook that intercepts every prompt you send to Claude Code, 
 
 A `Stop` hook that fires when Claude finishes responding, generating a dry sardonic one-liner and reading it aloud.
 
+### `hooks/task_completed.py` — Task done quip
+
+A `TaskCompleted` hook that fires when a task is marked as complete, generating a sardonic remark about finishing work and reading it aloud.
+
 Both hooks use [pocket-tts](https://github.com/kyutai-labs/pocket-tts) for high-quality local TTS, with macOS `say` as a fallback.
 
 ## Requirements
@@ -62,6 +66,17 @@ echo 'OPENROUTER_API_KEY=sk-or-...' > .env
           }
         ]
       }
+    ],
+    "TaskCompleted": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/path/to/cursed-claude-code/hooks/task_completed.py"
+          }
+        ]
+      }
     ]
   }
 }
@@ -91,6 +106,9 @@ python hooks/test_hook.py "your prompt here"
 
 # Test the Stop hook
 python hooks/test_stop.py
+
+# Test the TaskCompleted hook
+python hooks/test_task_completed.py
 ```
 
 Logs are written to `hook.log` in the repo root.
