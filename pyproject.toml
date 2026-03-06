@@ -1,0 +1,10 @@
+[project]
+name = "cursed-claude-code"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "openai",
+  "pocket-tts",
+  "python-dotenv",
+  "sounddevice",
+]

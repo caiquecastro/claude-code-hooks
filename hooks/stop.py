@@ -1,13 +1,4 @@
 #!/usr/bin/env -S uv run
-# /// script
-# requires-python = ">=3.10"
-# dependencies = [
-#   "openai",
-#   "pocket-tts",
-#   "python-dotenv",
-#   "sounddevice",
-# ]
-# ///
 """
 Claude Code Stop hook — speaks a snarky remark when Claude finishes a task.
 """

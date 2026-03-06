@@ -1,13 +1,4 @@
 #!/usr/bin/env -S uv run
-# /// script
-# requires-python = ">=3.10"
-# dependencies = [
-#   "openai",
-#   "pocket-tts",
-#   "python-dotenv",
-#   "sounddevice",
-# ]
-# ///
 """
 Claude Code UserPromptSubmit hook — roasts the user's prompt via TTS.
 Generates a sharp/critical comment using an LLM, then speaks it via pocket-tts.

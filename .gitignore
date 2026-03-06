@@ -2,3 +2,4 @@
 hook.log
 __pycache__/
 *.pyc
+.venv/
