@@ -7,13 +7,9 @@ import json
 import logging
 import sys
 
-from shared import LOG_FILE, MODEL, get_openrouter_client, speak
+from shared import MODEL, get_openrouter_client, speak, setup_logging
 
-logging.basicConfig(
-    filename=LOG_FILE,
-    level=logging.WARNING,
-    format="%(asctime)s %(levelname)s %(message)s",
-)
+setup_logging()
 log = logging.getLogger(__name__)
 
 

@@ -15,6 +15,14 @@ VOICE = "alba"  # catalog voices: alba, marius, javert, jean, fantine, cosette, 
 log = logging.getLogger(__name__)
 
 
+def setup_logging(level: int = logging.WARNING) -> None:
+    logging.basicConfig(
+        filename=LOG_FILE,
+        level=level,
+        format="%(asctime)s %(levelname)s %(message)s",
+    )
+
+
 def get_openrouter_client():
     import os
     from dotenv import load_dotenv
