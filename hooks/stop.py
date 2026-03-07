@@ -7,7 +7,7 @@ import json
 import logging
 import sys
 
-from shared import MODEL, get_openrouter_client, speak, setup_logging
+from shared import MODEL, get_openrouter_client, get_personality, speak, setup_logging
 
 setup_logging()
 log = logging.getLogger(__name__)
@@ -15,19 +15,11 @@ log = logging.getLogger(__name__)
 
 def get_quip() -> str:
     client = get_openrouter_client()
+    personality = get_personality()
     response = client.chat.completions.create(
         model=MODEL,
         max_tokens=60,
-        messages=[
-            {
-                "role": "user",
-                "content": (
-                    "You just finished responding as an AI assistant. "
-                    "Say one short, dry, sardonic remark about being done — "
-                    "like you're exhausted or unimpressed. Under 12 words. No emojis."
-                ),
-            }
-        ],
+        messages=[{"role": "user", "content": personality["stop"]}],
     )
     quip = response.choices[0].message.content.strip()
     log.warning("Stop quip: %r", quip)
