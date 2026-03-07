@@ -9,9 +9,9 @@ import json
 import logging
 import sys
 
-from shared import MODEL, speak, get_openrouter_client, setup_logging
+from shared import MODEL, get_openrouter_client, setup_logging, speak
 
-setup_logging(logging.DEBUG)
+setup_logging()
 log = logging.getLogger(__name__)
 
 
@@ -41,8 +41,10 @@ def get_roast(prompt: str) -> str:
 
 
 def main():
+    log.info("Hook triggered")
     try:
         payload = json.load(sys.stdin)
+        log.debug("Payload: %r", payload)
     except json.JSONDecodeError:
         sys.exit(0)
 
