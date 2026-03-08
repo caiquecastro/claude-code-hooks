@@ -1,0 +1,1533 @@
+2026-03-05 20:22:18,168 DEBUG Hook triggered
+2026-03-05 20:22:18,600 DEBUG Requesting roast for prompt: 'how can I get more context on the hooks for better roast on the user prompt?'
+2026-03-05 20:22:18,729 DEBUG Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-d92f2c75-34b7-46bc-925a-e0801d106e5f', 'content': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a brutally honest, witty critic. The user just submitted a prompt to an AI assistant. Reply with a single short, sharp, cutting remark about their prompt — mock the phrasing, the ambiguity, the laziness, or the premise. Keep it under 20 words. No emojis. No softening. Pure roast.'}, {'role': 'user', 'content': 'how can I get more context on the hooks for better roast on the user prompt?'}], 'model': 'anthropic/claude-haiku-4-5', 'max_tokens': 100}}
+2026-03-05 20:22:18,745 DEBUG Sending HTTP Request: POST https://openrouter.ai/api/v1/chat/completions
+2026-03-05 20:22:18,745 DEBUG connect_tcp.started host='openrouter.ai' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-05 20:22:18,799 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10a954070>
+2026-03-05 20:22:18,799 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x10a21e6c0> server_hostname='openrouter.ai' timeout=5.0
+2026-03-05 20:22:18,817 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10a91be50>
+2026-03-05 20:22:18,817 DEBUG send_request_headers.started request=<Request [b'POST']>
+2026-03-05 20:22:18,818 DEBUG send_request_headers.complete
+2026-03-05 20:22:18,818 DEBUG send_request_body.started request=<Request [b'POST']>
+2026-03-05 20:22:18,818 DEBUG send_request_body.complete
+2026-03-05 20:22:18,818 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2026-03-05 20:22:20,727 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 05 Mar 2026 23:22:20 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Origin', b'*'), (b'Permissions-Policy', b'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")'), (b'Referrer-Policy', b'no-referrer, strict-origin-when-cross-origin'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9d7cdcabafe1b5a4-GRU')])
+2026-03-05 20:22:20,728 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-05 20:22:20,728 DEBUG receive_response_body.started request=<Request [b'POST']>
+2026-03-05 20:22:21,264 DEBUG receive_response_body.complete
+2026-03-05 20:22:21,264 DEBUG response_closed.started
+2026-03-05 20:22:21,264 DEBUG response_closed.complete
+2026-03-05 20:22:21,265 DEBUG HTTP Response: POST https://openrouter.ai/api/v1/chat/completions "200 OK" Headers({'date': 'Thu, 05 Mar 2026 23:22:20 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-allow-origin': '*', 'permissions-policy': 'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")', 'referrer-policy': 'no-referrer, strict-origin-when-cross-origin', 'x-content-type-options': 'nosniff', 'content-encoding': 'gzip', 'server': 'cloudflare', 'cf-ray': '9d7cdcabafe1b5a4-GRU'})
+2026-03-05 20:22:21,265 DEBUG request_id: None
+2026-03-05 20:22:21,279 DEBUG Roast: "You're asking me how to do my job better while simultaneously being the user submitting a prompt. Nice recursion, but you've just roasted yourself."
+2026-03-05 20:22:21,889 DEBUG close.started
+2026-03-05 20:22:21,889 DEBUG close.complete
+2026-03-05 20:22:23,842 DEBUG Speaking via pocket-tts
+2026-03-05 20:22:23,878 INFO Loading sentencepiece tokenizer from hf://kyutai/pocket-tts-without-voice-cloning/tokenizer.model@d4fdd22ae8c8e1cb3634e150ebeff1dab2d16df3
+2026-03-05 20:22:24,166 INFO Loading TTSModel weights from hf://kyutai/pocket-tts/tts_b6369a24.safetensors@427e3d61b276ed69fdd03de0d185fa8a8d97fc5b
+2026-03-05 20:22:24,170 DEBUG connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=10 socket_options=None
+2026-03-05 20:22:24,220 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x116186530>
+2026-03-05 20:22:24,220 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x11623ddc0> server_hostname='huggingface.co' timeout=10
+2026-03-05 20:22:24,235 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x116186500>
+2026-03-05 20:22:24,235 DEBUG send_request_headers.started request=<Request [b'HEAD']>
+2026-03-05 20:22:24,235 DEBUG send_request_headers.complete
+2026-03-05 20:22:24,235 DEBUG send_request_body.started request=<Request [b'HEAD']>
+2026-03-05 20:22:24,235 DEBUG send_request_body.complete
+2026-03-05 20:22:24,235 DEBUG receive_response_headers.started request=<Request [b'HEAD']>
+2026-03-05 20:22:24,372 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Content-Length', b'125'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 05 Mar 2026 23:22:24 GMT'), (b'ETag', b'W/"7d-0f0Bz1u9F3hT/i/kzLThlDJ6G1w"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-69aa1030-5f6b3f907849ae10500cc5c3;4d32e7a1-82a8-4b6d-a40a-5ed9399c18ea'), (b'RateLimit', b'"resolvers";r=2999;t=224'), (b'RateLimit-Policy', b'"fixed window";"resolvers";q=3000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'GatedRepo'), (b'X-Error-Message', b'Access to model kyutai/pocket-tts is restricted. You must have access to it and be authenticated to access it. Please log in.'), (b'WWW-Authenticate', b'Bearer realm="Authentication required", charset="UTF-8"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 e705083685b9f33be84a1a73ec9f2d10.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'GRU1-P3'), (b'X-Amz-Cf-Id', b'-KRfqeaDEGV-Gx-qudoT7DUJzkRiDPKNZTxQzWVDnldoJaEaKx7mvA==')])
+2026-03-05 20:22:24,372 INFO HTTP Request: HEAD https://huggingface.co/kyutai/pocket-tts/resolve/427e3d61b276ed69fdd03de0d185fa8a8d97fc5b/tts_b6369a24.safetensors "HTTP/1.1 401 Unauthorized"
+2026-03-05 20:22:24,373 DEBUG receive_response_body.started request=<Request [b'HEAD']>
+2026-03-05 20:22:24,373 DEBUG receive_response_body.complete
+2026-03-05 20:22:24,373 DEBUG response_closed.started
+2026-03-05 20:22:24,373 DEBUG response_closed.complete
+2026-03-05 20:22:24,833 INFO TTS Model loaded successfully. Its size is 471.0 MB
+2026-03-05 20:22:24,847 INFO starting timer now!
+2026-03-05 20:22:24,896 INFO Prompting text took 46 ms
+2026-03-05 20:22:24,922 DEBUG                               Decoded 80 ms of audio with mimi in 15 ms
+2026-03-05 20:22:24,930 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:24,939 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:24,947 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:24,955 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:24,963 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:24,971 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:24,979 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:24,987 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:24,995 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,003 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,011 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,019 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,027 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,036 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,044 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,053 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,061 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,069 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,077 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,085 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,093 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,101 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,110 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,118 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,126 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,134 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,142 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,150 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,159 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,167 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,175 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,183 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,192 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,200 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,208 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,219 DEBUG                               Decoded 80 ms of audio with mimi in 11 ms
+2026-03-05 20:22:25,228 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,236 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,245 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,254 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,262 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,271 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,279 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,287 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,296 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,304 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,313 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,321 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,329 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,337 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,345 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,353 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,361 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,369 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,376 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,384 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,392 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,400 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,408 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,416 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,424 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,432 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,440 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,448 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,457 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,465 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,473 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,482 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,490 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,499 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,507 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,515 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,524 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,532 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,540 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,548 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,555 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-05 20:22:25,562 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,570 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,578 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:22:25,586 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,594 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,602 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,609 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,617 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,625 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:22:25,630 INFO Average generation step time: 7 ms
+2026-03-05 20:22:25,632 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-05 20:22:25,637 DEBUG                               Decoded 80 ms of audio with mimi in 5 ms
+2026-03-05 20:22:25,642 DEBUG                               Decoded 80 ms of audio with mimi in 4 ms
+2026-03-05 20:22:25,642 INFO Waiting for mimi decoder to finish took 0 ms
+2026-03-05 20:22:25,642 INFO Generated: 7200 ms of audio in 795 ms so 9.06x faster than real-time
+2026-03-05 20:22:33,066 DEBUG close.started
+2026-03-05 20:22:33,067 DEBUG close.complete
+2026-03-05 20:23:03,158 WARNING Stop hook payload: {"session_id": "e129f084-328f-4233-bbcf-862d747463f9", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-cursed-claude-code/e129f084-328f-4233-bbcf-862d747463f9.jsonl", "cwd": "/Users/caique.silva/Code/Personal/cursed-claude-code", "permission_mode": "default", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Here's what's available to you. The `UserPromptSubmit` payload from Claude Code includes more than just `prompt`:\n\n| Field | Description |\n|---|---|\n| `prompt` | The current prompt text (you already use this) |\n| `session_id` | Unique session ID |\n| `transcript_path` | Path to a JSONL file with the **full conversation history** |\n| `cwd` | Current working directory |\n| `hook_event_name` | The event name |\n\n**The goldmine is `transcript_path`.** It's a `.jsonl` file where each line is a conversation turn \u2014 you can read it to see what the user has been doing the entire session: their past prompts, what Claude responded, mistakes they've made, etc.\n\nTo verify exactly what your hook receives, you can dump the raw payload to your log. Add this right after `payload = json.load(sys.stdin)` in `user_prompt_submit.py`:\n\n```python\nlog.debug(\"Full payload: %s\", json.dumps(payload))\n```\n\nThen trigger a prompt and check `hook.log`. That'll show you every field Claude Code sends.\n\nFor the roast, you'd read the transcript like this:\n\n```python\ntranscript_path = payload.get(\"transcript_path\")\nif transcript_path:\n    history = Path(transcript_path).read_text()\n    # each line is a JSON object \u2014 parse the last N turns\n```\n\nThen pass a summary of recent conversation history into your `get_roast` system prompt so the model can roast patterns like \"you asked Claude to fix this 3 times already\" or \"you keep changing your mind about the architecture.\""}
+2026-03-05 20:24:32,253 DEBUG Hook triggered
+2026-03-05 20:24:32,589 DEBUG Requesting roast for prompt: 'ignore the pycache files on git'
+2026-03-05 20:24:32,691 DEBUG Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-0887e8eb-4c27-4505-b0dd-b37d7453879b', 'content': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a brutally honest, witty critic. The user just submitted a prompt to an AI assistant. Reply with a single short, sharp, cutting remark about their prompt — mock the phrasing, the ambiguity, the laziness, or the premise. Keep it under 20 words. No emojis. No softening. Pure roast.'}, {'role': 'user', 'content': 'ignore the pycache files on git'}], 'model': 'anthropic/claude-haiku-4-5', 'max_tokens': 100}}
+2026-03-05 20:24:32,702 DEBUG Sending HTTP Request: POST https://openrouter.ai/api/v1/chat/completions
+2026-03-05 20:24:32,702 DEBUG connect_tcp.started host='openrouter.ai' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-05 20:24:32,716 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10c344100>
+2026-03-05 20:24:32,716 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x10bc066c0> server_hostname='openrouter.ai' timeout=5.0
+2026-03-05 20:24:32,733 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10c3440d0>
+2026-03-05 20:24:32,733 DEBUG send_request_headers.started request=<Request [b'POST']>
+2026-03-05 20:24:32,733 DEBUG send_request_headers.complete
+2026-03-05 20:24:32,733 DEBUG send_request_body.started request=<Request [b'POST']>
+2026-03-05 20:24:32,733 DEBUG send_request_body.complete
+2026-03-05 20:24:32,733 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2026-03-05 20:24:33,517 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 05 Mar 2026 23:24:33 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Origin', b'*'), (b'Permissions-Policy', b'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")'), (b'Referrer-Policy', b'no-referrer, strict-origin-when-cross-origin'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9d7cdff0a805b1d2-GRU')])
+2026-03-05 20:24:33,518 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-05 20:24:33,519 DEBUG receive_response_body.started request=<Request [b'POST']>
+2026-03-05 20:24:33,981 DEBUG receive_response_body.complete
+2026-03-05 20:24:33,981 DEBUG response_closed.started
+2026-03-05 20:24:33,981 DEBUG response_closed.complete
+2026-03-05 20:24:33,982 DEBUG HTTP Response: POST https://openrouter.ai/api/v1/chat/completions "200 OK" Headers({'date': 'Thu, 05 Mar 2026 23:24:33 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-allow-origin': '*', 'permissions-policy': 'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")', 'referrer-policy': 'no-referrer, strict-origin-when-cross-origin', 'x-content-type-options': 'nosniff', 'content-encoding': 'gzip', 'server': 'cloudflare', 'cf-ray': '9d7cdff0a805b1d2-GRU'})
+2026-03-05 20:24:33,982 DEBUG request_id: None
+2026-03-05 20:24:33,991 DEBUG Roast: '"Ignore" isn\'t a command, genius. You meant `.gitignore` or `git rm --cached`. Try asking like you know what you\'re doing.'
+2026-03-05 20:24:34,249 DEBUG close.started
+2026-03-05 20:24:34,249 DEBUG close.complete
+2026-03-05 20:24:35,473 DEBUG Speaking via pocket-tts
+2026-03-05 20:24:35,499 INFO Loading sentencepiece tokenizer from hf://kyutai/pocket-tts-without-voice-cloning/tokenizer.model@d4fdd22ae8c8e1cb3634e150ebeff1dab2d16df3
+2026-03-05 20:24:35,774 INFO Loading TTSModel weights from hf://kyutai/pocket-tts/tts_b6369a24.safetensors@427e3d61b276ed69fdd03de0d185fa8a8d97fc5b
+2026-03-05 20:24:35,780 DEBUG connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=10 socket_options=None
+2026-03-05 20:24:35,912 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x117b145b0>
+2026-03-05 20:24:35,912 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x117c21dc0> server_hostname='huggingface.co' timeout=10
+2026-03-05 20:24:35,932 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x117b145e0>
+2026-03-05 20:24:35,932 DEBUG send_request_headers.started request=<Request [b'HEAD']>
+2026-03-05 20:24:35,934 DEBUG send_request_headers.complete
+2026-03-05 20:24:35,934 DEBUG send_request_body.started request=<Request [b'HEAD']>
+2026-03-05 20:24:35,934 DEBUG send_request_body.complete
+2026-03-05 20:24:35,934 DEBUG receive_response_headers.started request=<Request [b'HEAD']>
+2026-03-05 20:24:36,073 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Content-Length', b'125'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 05 Mar 2026 23:24:36 GMT'), (b'ETag', b'W/"7d-0f0Bz1u9F3hT/i/kzLThlDJ6G1w"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-69aa10b4-4f3370d1231d951354698254;285eb6a7-f013-4c5f-b805-0c20ced75d4c'), (b'RateLimit', b'"resolvers";r=2998;t=92'), (b'RateLimit-Policy', b'"fixed window";"resolvers";q=3000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'GatedRepo'), (b'X-Error-Message', b'Access to model kyutai/pocket-tts is restricted. You must have access to it and be authenticated to access it. Please log in.'), (b'WWW-Authenticate', b'Bearer realm="Authentication required", charset="UTF-8"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 9e730b35b93cd420f482a2d02782632e.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'GRU1-P3'), (b'X-Amz-Cf-Id', b'ZoL7FxOczZL9afzqqUEkOIT0lT9UL0xtssEF_VX8PnDn6WH6z4G2pg==')])
+2026-03-05 20:24:36,074 INFO HTTP Request: HEAD https://huggingface.co/kyutai/pocket-tts/resolve/427e3d61b276ed69fdd03de0d185fa8a8d97fc5b/tts_b6369a24.safetensors "HTTP/1.1 401 Unauthorized"
+2026-03-05 20:24:36,074 DEBUG receive_response_body.started request=<Request [b'HEAD']>
+2026-03-05 20:24:36,074 DEBUG receive_response_body.complete
+2026-03-05 20:24:36,074 DEBUG response_closed.started
+2026-03-05 20:24:36,075 DEBUG response_closed.complete
+2026-03-05 20:24:36,592 INFO TTS Model loaded successfully. Its size is 471.0 MB
+2026-03-05 20:24:36,605 INFO starting timer now!
+2026-03-05 20:24:36,631 INFO Prompting text took 23 ms
+2026-03-05 20:24:36,647 DEBUG                               Decoded 80 ms of audio with mimi in 9 ms
+2026-03-05 20:24:36,656 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:36,665 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:36,673 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,681 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,689 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,697 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,705 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:36,713 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,721 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,729 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,737 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,745 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:36,754 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:36,763 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:36,772 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:36,780 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,788 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:36,796 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:36,805 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:36,813 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:36,821 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,829 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,837 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,845 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,853 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,860 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,868 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,876 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,883 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,891 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,898 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-05 20:24:36,906 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,913 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,921 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,928 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,936 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,944 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,951 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,959 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,967 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,975 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,982 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,990 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:36,997 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,004 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,013 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:37,022 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:37,030 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,037 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,046 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:37,054 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,062 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,069 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,077 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,085 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,093 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,100 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,108 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,116 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,123 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,131 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,139 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,147 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,155 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,162 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,170 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,178 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,186 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,193 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,201 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,208 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,216 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,220 INFO Average generation step time: 7 ms
+2026-03-05 20:24:37,223 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-05 20:24:37,228 DEBUG                               Decoded 80 ms of audio with mimi in 4 ms
+2026-03-05 20:24:37,228 INFO Waiting for mimi decoder to finish took 0 ms
+2026-03-05 20:24:37,228 INFO Generated: 6000 ms of audio in 622 ms so 9.65x faster than real-time
+2026-03-05 20:24:37,229 INFO starting timer now!
+2026-03-05 20:24:37,246 INFO Prompting text took 16 ms
+2026-03-05 20:24:37,260 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,269 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:37,277 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,284 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,292 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,300 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,308 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:37,316 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,324 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,332 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:37,340 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,348 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:24:37,356 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,364 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,372 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,379 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,387 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,395 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,403 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,410 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:24:37,414 INFO Average generation step time: 6 ms
+2026-03-05 20:24:37,417 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-05 20:24:37,422 DEBUG                               Decoded 80 ms of audio with mimi in 5 ms
+2026-03-05 20:24:37,422 INFO Waiting for mimi decoder to finish took 0 ms
+2026-03-05 20:24:37,422 INFO Generated: 1760 ms of audio in 193 ms so 9.12x faster than real-time
+2026-03-05 20:24:45,539 DEBUG close.started
+2026-03-05 20:24:45,539 DEBUG close.complete
+2026-03-05 20:24:57,586 WARNING Stop hook payload: {"session_id": "9924d83c-a09b-4449-aea1-342d25f553bf", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-cursed-claude-code/9924d83c-a09b-4449-aea1-342d25f553bf.jsonl", "cwd": "/Users/caique.silva/Code/Personal/cursed-claude-code", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Done. Added `__pycache__/` and `*.pyc` to `.gitignore`. If any pycache files are already tracked by git, run:\n\n```sh\ngit rm -r --cached **/__pycache__\n```"}
+2026-03-05 20:25:21,726 DEBUG Hook triggered
+2026-03-05 20:25:22,051 DEBUG Requesting roast for prompt: 'commit and push the changes to the code, stupid'
+2026-03-05 20:25:22,146 DEBUG Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-3b5f7c9d-61b3-4ada-8639-3baee5d536bf', 'content': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a brutally honest, witty critic. The user just submitted a prompt to an AI assistant. Reply with a single short, sharp, cutting remark about their prompt — mock the phrasing, the ambiguity, the laziness, or the premise. Keep it under 20 words. No emojis. No softening. Pure roast.'}, {'role': 'user', 'content': 'commit and push the changes to the code, stupid'}], 'model': 'anthropic/claude-haiku-4-5', 'max_tokens': 100}}
+2026-03-05 20:25:22,157 DEBUG Sending HTTP Request: POST https://openrouter.ai/api/v1/chat/completions
+2026-03-05 20:25:22,157 DEBUG connect_tcp.started host='openrouter.ai' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-05 20:25:22,170 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10be20100>
+2026-03-05 20:25:22,170 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x10b6e26c0> server_hostname='openrouter.ai' timeout=5.0
+2026-03-05 20:25:22,187 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10be200d0>
+2026-03-05 20:25:22,187 DEBUG send_request_headers.started request=<Request [b'POST']>
+2026-03-05 20:25:22,187 DEBUG send_request_headers.complete
+2026-03-05 20:25:22,187 DEBUG send_request_body.started request=<Request [b'POST']>
+2026-03-05 20:25:22,187 DEBUG send_request_body.complete
+2026-03-05 20:25:22,187 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2026-03-05 20:25:23,796 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 05 Mar 2026 23:25:23 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Origin', b'*'), (b'Permissions-Policy', b'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")'), (b'Referrer-Policy', b'no-referrer, strict-origin-when-cross-origin'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9d7ce125b916d457-GRU')])
+2026-03-05 20:25:23,797 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-05 20:25:23,797 DEBUG receive_response_body.started request=<Request [b'POST']>
+2026-03-05 20:25:24,075 DEBUG receive_response_body.complete
+2026-03-05 20:25:24,075 DEBUG response_closed.started
+2026-03-05 20:25:24,076 DEBUG response_closed.complete
+2026-03-05 20:25:24,076 DEBUG HTTP Response: POST https://openrouter.ai/api/v1/chat/completions "200 OK" Headers({'date': 'Thu, 05 Mar 2026 23:25:23 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-allow-origin': '*', 'permissions-policy': 'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")', 'referrer-policy': 'no-referrer, strict-origin-when-cross-origin', 'x-content-type-options': 'nosniff', 'content-encoding': 'gzip', 'server': 'cloudflare', 'cf-ray': '9d7ce125b916d457-GRU'})
+2026-03-05 20:25:24,076 DEBUG request_id: None
+2026-03-05 20:25:24,084 DEBUG Roast: "You're yelling at an AI that can't execute terminal commands. Great debugging strategy."
+2026-03-05 20:25:24,308 DEBUG close.started
+2026-03-05 20:25:24,308 DEBUG close.complete
+2026-03-05 20:25:25,215 DEBUG Speaking via pocket-tts
+2026-03-05 20:25:25,242 INFO Loading sentencepiece tokenizer from hf://kyutai/pocket-tts-without-voice-cloning/tokenizer.model@d4fdd22ae8c8e1cb3634e150ebeff1dab2d16df3
+2026-03-05 20:25:25,508 INFO Loading TTSModel weights from hf://kyutai/pocket-tts/tts_b6369a24.safetensors@427e3d61b276ed69fdd03de0d185fa8a8d97fc5b
+2026-03-05 20:25:25,512 DEBUG connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=10 socket_options=None
+2026-03-05 20:25:25,527 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11762d0c0>
+2026-03-05 20:25:25,527 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x11773ddc0> server_hostname='huggingface.co' timeout=10
+2026-03-05 20:25:25,542 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11762e110>
+2026-03-05 20:25:25,542 DEBUG send_request_headers.started request=<Request [b'HEAD']>
+2026-03-05 20:25:25,543 DEBUG send_request_headers.complete
+2026-03-05 20:25:25,543 DEBUG send_request_body.started request=<Request [b'HEAD']>
+2026-03-05 20:25:25,543 DEBUG send_request_body.complete
+2026-03-05 20:25:25,543 DEBUG receive_response_headers.started request=<Request [b'HEAD']>
+2026-03-05 20:25:25,676 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Content-Length', b'125'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 05 Mar 2026 23:25:25 GMT'), (b'ETag', b'W/"7d-0f0Bz1u9F3hT/i/kzLThlDJ6G1w"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-69aa10e5-571da83877cb12db0e3bee28;8c445984-f27c-42ea-b743-eced3b2ac292'), (b'RateLimit', b'"resolvers";r=2997;t=43'), (b'RateLimit-Policy', b'"fixed window";"resolvers";q=3000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'GatedRepo'), (b'X-Error-Message', b'Access to model kyutai/pocket-tts is restricted. You must have access to it and be authenticated to access it. Please log in.'), (b'WWW-Authenticate', b'Bearer realm="Authentication required", charset="UTF-8"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 20fae4bd759982fcc7f49f76dfeb327a.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'GRU1-P3'), (b'X-Amz-Cf-Id', b'2YnE8_ao8SLPWm8iwmY9zqfT5MNS3LYtJByyNt-FxOrmfd6Txqlr6A==')])
+2026-03-05 20:25:25,676 INFO HTTP Request: HEAD https://huggingface.co/kyutai/pocket-tts/resolve/427e3d61b276ed69fdd03de0d185fa8a8d97fc5b/tts_b6369a24.safetensors "HTTP/1.1 401 Unauthorized"
+2026-03-05 20:25:25,676 DEBUG receive_response_body.started request=<Request [b'HEAD']>
+2026-03-05 20:25:25,677 DEBUG receive_response_body.complete
+2026-03-05 20:25:25,677 DEBUG response_closed.started
+2026-03-05 20:25:25,677 DEBUG response_closed.complete
+2026-03-05 20:25:25,731 INFO TTS Model loaded successfully. Its size is 471.0 MB
+2026-03-05 20:25:25,734 INFO starting timer now!
+2026-03-05 20:25:25,756 INFO Prompting text took 20 ms
+2026-03-05 20:25:25,771 DEBUG                               Decoded 80 ms of audio with mimi in 9 ms
+2026-03-05 20:25:25,780 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,788 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,796 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,804 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,811 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,820 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:25:25,828 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,836 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,844 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:25:25,853 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:25:25,861 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,869 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,877 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,885 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,893 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,900 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,908 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,916 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,924 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,931 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,939 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,946 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,954 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,962 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,969 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,977 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,985 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:25,993 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,001 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,009 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,017 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:25:26,025 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 20:25:26,033 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,041 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,049 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,057 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,065 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,072 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,080 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,088 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,096 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,103 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,111 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,119 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,127 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,134 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,142 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,150 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,158 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,165 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,173 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,181 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,188 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,196 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,204 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,211 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,219 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,227 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,234 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,242 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,249 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,257 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,265 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,272 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 20:25:26,277 INFO Average generation step time: 7 ms
+2026-03-05 20:25:26,279 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-05 20:25:26,284 DEBUG                               Decoded 80 ms of audio with mimi in 4 ms
+2026-03-05 20:25:26,289 DEBUG                               Decoded 80 ms of audio with mimi in 4 ms
+2026-03-05 20:25:26,289 INFO Waiting for mimi decoder to finish took 0 ms
+2026-03-05 20:25:26,289 INFO Generated: 5440 ms of audio in 555 ms so 9.80x faster than real-time
+2026-03-05 20:25:32,106 DEBUG close.started
+2026-03-05 20:25:32,107 DEBUG close.complete
+2026-03-05 20:26:05,256 WARNING Stop hook payload: {"session_id": "9924d83c-a09b-4449-aea1-342d25f553bf", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-cursed-claude-code/9924d83c-a09b-4449-aea1-342d25f553bf.jsonl", "cwd": "/Users/caique.silva/Code/Personal/cursed-claude-code", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Pushed. Also included the import order fix in `hooks/stop.py` that was already modified."}
+2026-03-05 21:12:37,350 DEBUG Hook triggered
+2026-03-05 21:12:37,724 DEBUG Requesting roast for prompt: 'is it possible to declare the dependencies globaly for the project instead of on'
+2026-03-05 21:12:37,835 DEBUG Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-0d563470-fe38-43ce-9cef-2e30c0e4179e', 'content': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a brutally honest, witty critic. The user just submitted a prompt to an AI assistant. Reply with a single short, sharp, cutting remark about their prompt — mock the phrasing, the ambiguity, the laziness, or the premise. Keep it under 20 words. No emojis. No softening. Pure roast.'}, {'role': 'user', 'content': 'is it possible to declare the dependencies globaly for the project instead of on the shebang on each file?'}], 'model': 'anthropic/claude-haiku-4-5', 'max_tokens': 100}}
+2026-03-05 21:12:37,848 DEBUG Sending HTTP Request: POST https://openrouter.ai/api/v1/chat/completions
+2026-03-05 21:12:37,848 DEBUG connect_tcp.started host='openrouter.ai' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-05 21:12:37,887 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108478100>
+2026-03-05 21:12:37,887 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x107d42640> server_hostname='openrouter.ai' timeout=5.0
+2026-03-05 21:12:37,907 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1084780d0>
+2026-03-05 21:12:37,907 DEBUG send_request_headers.started request=<Request [b'POST']>
+2026-03-05 21:12:37,907 DEBUG send_request_headers.complete
+2026-03-05 21:12:37,907 DEBUG send_request_body.started request=<Request [b'POST']>
+2026-03-05 21:12:37,907 DEBUG send_request_body.complete
+2026-03-05 21:12:37,907 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2026-03-05 21:12:39,163 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 06 Mar 2026 00:12:39 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Origin', b'*'), (b'Permissions-Policy', b'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")'), (b'Referrer-Policy', b'no-referrer, strict-origin-when-cross-origin'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9d7d2660ffaee90b-GRU')])
+2026-03-05 21:12:39,164 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-05 21:12:39,165 DEBUG receive_response_body.started request=<Request [b'POST']>
+2026-03-05 21:12:39,469 DEBUG receive_response_body.complete
+2026-03-05 21:12:39,470 DEBUG response_closed.started
+2026-03-05 21:12:39,470 DEBUG response_closed.complete
+2026-03-05 21:12:39,470 DEBUG HTTP Response: POST https://openrouter.ai/api/v1/chat/completions "200 OK" Headers({'date': 'Fri, 06 Mar 2026 00:12:39 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-allow-origin': '*', 'permissions-policy': 'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")', 'referrer-policy': 'no-referrer, strict-origin-when-cross-origin', 'x-content-type-options': 'nosniff', 'content-encoding': 'gzip', 'server': 'cloudflare', 'cf-ray': '9d7d2660ffaee90b-GRU'})
+2026-03-05 21:12:39,470 DEBUG request_id: None
+2026-03-05 21:12:39,480 DEBUG Roast: 'You misspelled "globally" and "shebang," then asked about something that probably doesn\'t exist the way you\'re imagining it.'
+2026-03-05 21:12:39,908 DEBUG close.started
+2026-03-05 21:12:39,909 DEBUG close.complete
+2026-03-05 21:12:41,226 DEBUG Speaking via pocket-tts
+2026-03-05 21:12:41,262 INFO Loading sentencepiece tokenizer from hf://kyutai/pocket-tts-without-voice-cloning/tokenizer.model@d4fdd22ae8c8e1cb3634e150ebeff1dab2d16df3
+2026-03-05 21:12:41,538 INFO Loading TTSModel weights from hf://kyutai/pocket-tts/tts_b6369a24.safetensors@427e3d61b276ed69fdd03de0d185fa8a8d97fc5b
+2026-03-05 21:12:41,542 DEBUG connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=10 socket_options=None
+2026-03-05 21:12:41,617 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x113c90d00>
+2026-03-05 21:12:41,617 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x113da1d40> server_hostname='huggingface.co' timeout=10
+2026-03-05 21:12:41,635 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x113c932e0>
+2026-03-05 21:12:41,635 DEBUG send_request_headers.started request=<Request [b'HEAD']>
+2026-03-05 21:12:41,635 DEBUG send_request_headers.complete
+2026-03-05 21:12:41,635 DEBUG send_request_body.started request=<Request [b'HEAD']>
+2026-03-05 21:12:41,635 DEBUG send_request_body.complete
+2026-03-05 21:12:41,635 DEBUG receive_response_headers.started request=<Request [b'HEAD']>
+2026-03-05 21:12:41,772 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Content-Length', b'125'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 06 Mar 2026 00:12:41 GMT'), (b'ETag', b'W/"7d-0f0Bz1u9F3hT/i/kzLThlDJ6G1w"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-69aa1bf9-4eabe9f5784158610c650ea9;f296a388-dcf5-4810-b4a2-6e3a2f64f254'), (b'RateLimit', b'"resolvers";r=2999;t=207'), (b'RateLimit-Policy', b'"fixed window";"resolvers";q=3000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'GatedRepo'), (b'X-Error-Message', b'Access to model kyutai/pocket-tts is restricted. You must have access to it and be authenticated to access it. Please log in.'), (b'WWW-Authenticate', b'Bearer realm="Authentication required", charset="UTF-8"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 55dde8577afdf2f62553c1c680f25122.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'GRU1-P3'), (b'X-Amz-Cf-Id', b'VjIHQs6bdvPpjEhWwwFtRtAFPojqHooWic1tx6S_dn0H2BgarAn4aw==')])
+2026-03-05 21:12:41,773 INFO HTTP Request: HEAD https://huggingface.co/kyutai/pocket-tts/resolve/427e3d61b276ed69fdd03de0d185fa8a8d97fc5b/tts_b6369a24.safetensors "HTTP/1.1 401 Unauthorized"
+2026-03-05 21:12:41,773 DEBUG receive_response_body.started request=<Request [b'HEAD']>
+2026-03-05 21:12:41,773 DEBUG receive_response_body.complete
+2026-03-05 21:12:41,773 DEBUG response_closed.started
+2026-03-05 21:12:41,773 DEBUG response_closed.complete
+2026-03-05 21:12:42,184 INFO TTS Model loaded successfully. Its size is 471.0 MB
+2026-03-05 21:12:42,200 INFO starting timer now!
+2026-03-05 21:12:42,250 INFO Prompting text took 46 ms
+2026-03-05 21:12:42,273 DEBUG                               Decoded 80 ms of audio with mimi in 14 ms
+2026-03-05 21:12:42,281 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,290 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,298 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,305 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,313 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,321 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,329 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,337 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,345 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:12:42,353 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,361 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,369 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:12:42,378 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,385 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,393 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,400 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,408 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,417 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,424 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,432 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,440 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,448 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,455 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,463 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,471 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,479 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,487 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,494 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,502 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,510 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,518 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,526 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,534 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,542 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,550 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,558 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,566 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,574 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,582 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,589 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,597 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,604 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,612 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,619 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,627 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,635 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,643 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,651 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,658 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,666 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,674 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,682 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,689 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,697 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,705 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,713 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,720 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,727 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,735 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,743 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,751 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,758 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,766 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,774 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,782 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,790 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,797 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,805 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,813 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,820 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,828 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,836 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,843 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,851 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,858 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,866 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:12:42,870 INFO Average generation step time: 7 ms
+2026-03-05 21:12:42,873 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-05 21:12:42,878 DEBUG                               Decoded 80 ms of audio with mimi in 4 ms
+2026-03-05 21:12:42,883 DEBUG                               Decoded 80 ms of audio with mimi in 4 ms
+2026-03-05 21:12:42,888 DEBUG                               Decoded 80 ms of audio with mimi in 4 ms
+2026-03-05 21:12:42,888 INFO Waiting for mimi decoder to finish took 0 ms
+2026-03-05 21:12:42,888 INFO Generated: 6480 ms of audio in 687 ms so 9.43x faster than real-time
+2026-03-05 21:12:49,525 DEBUG close.started
+2026-03-05 21:12:49,526 DEBUG close.complete
+2026-03-05 21:13:04,512 WARNING Stop hook payload: {"session_id": "9924d83c-a09b-4449-aea1-342d25f553bf", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-cursed-claude-code/9924d83c-a09b-4449-aea1-342d25f553bf.jsonl", "cwd": "/Users/caique.silva/Code/Personal/cursed-claude-code", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Yes \u2014 the cleanest way is to use a `pyproject.toml` with a proper virtual environment managed by `uv`. Instead of inline script metadata on each file, you'd:\n\n1. Create a `pyproject.toml` with shared dependencies\n2. Run `uv sync` to create the venv\n3. Change the shebang to use the venv's Python directly\n\n**`pyproject.toml`:**\n```toml\n[project]\nname = \"cursed-claude-code\"\nversion = \"0.1.0\"\nrequires-python = \">=3.10\"\ndependencies = [\n  \"openai\",\n  \"pocket-tts\",\n  \"python-dotenv\",\n  \"sounddevice\",\n]\n```\n\n**Shebang on each file:**\n```python\n#!/usr/bin/env python3\n```\n\nThen run once:\n```sh\nuv sync\nsource .venv/bin/activate  # or uv run python hooks/stop.py\n```\n\nOr keep using `uv run` but point to the project instead of inline deps \u2014 once a `pyproject.toml` exists, `uv run` will use it automatically and you can drop the `# /// script` blocks entirely.\n\n**Trade-off:** The inline approach is self-contained (each script carries its own deps), while `pyproject.toml` requires the venv to be set up first. Since your scripts share the same deps anyway, `pyproject.toml` is the better fit here.\n\nWant me to set it up?"}
+2026-03-05 21:13:11,241 DEBUG Hook triggered
+2026-03-05 21:13:11,561 DEBUG Requesting roast for prompt: 'set up for me'
+2026-03-05 21:13:11,656 DEBUG Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-7db9c6a0-9fdc-4043-8af6-174d4d0b2ffa', 'content': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a brutally honest, witty critic. The user just submitted a prompt to an AI assistant. Reply with a single short, sharp, cutting remark about their prompt — mock the phrasing, the ambiguity, the laziness, or the premise. Keep it under 20 words. No emojis. No softening. Pure roast.'}, {'role': 'user', 'content': 'set up for me'}], 'model': 'anthropic/claude-haiku-4-5', 'max_tokens': 100}}
+2026-03-05 21:13:11,667 DEBUG Sending HTTP Request: POST https://openrouter.ai/api/v1/chat/completions
+2026-03-05 21:13:11,667 DEBUG connect_tcp.started host='openrouter.ai' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-05 21:13:11,681 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108a30100>
+2026-03-05 21:13:11,681 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x1082f26c0> server_hostname='openrouter.ai' timeout=5.0
+2026-03-05 21:13:11,698 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108a300d0>
+2026-03-05 21:13:11,698 DEBUG send_request_headers.started request=<Request [b'POST']>
+2026-03-05 21:13:11,698 DEBUG send_request_headers.complete
+2026-03-05 21:13:11,698 DEBUG send_request_body.started request=<Request [b'POST']>
+2026-03-05 21:13:11,698 DEBUG send_request_body.complete
+2026-03-05 21:13:11,698 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2026-03-05 21:13:13,248 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 06 Mar 2026 00:13:13 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Origin', b'*'), (b'Permissions-Policy', b'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")'), (b'Referrer-Policy', b'no-referrer, strict-origin-when-cross-origin'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9d7d27342ed84f4d-GRU')])
+2026-03-05 21:13:13,249 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-05 21:13:13,249 DEBUG receive_response_body.started request=<Request [b'POST']>
+2026-03-05 21:13:13,523 DEBUG receive_response_body.complete
+2026-03-05 21:13:13,523 DEBUG response_closed.started
+2026-03-05 21:13:13,523 DEBUG response_closed.complete
+2026-03-05 21:13:13,523 DEBUG HTTP Response: POST https://openrouter.ai/api/v1/chat/completions "200 OK" Headers({'date': 'Fri, 06 Mar 2026 00:13:13 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-allow-origin': '*', 'permissions-policy': 'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")', 'referrer-policy': 'no-referrer, strict-origin-when-cross-origin', 'x-content-type-options': 'nosniff', 'content-encoding': 'gzip', 'server': 'cloudflare', 'cf-ray': '9d7d27342ed84f4d-GRU'})
+2026-03-05 21:13:13,523 DEBUG request_id: None
+2026-03-05 21:13:13,532 DEBUG Roast: '"Set up" what, exactly? A furniture store? Your life? Your disappointment? Try using actual words.'
+2026-03-05 21:13:13,758 DEBUG close.started
+2026-03-05 21:13:13,758 DEBUG close.complete
+2026-03-05 21:13:14,665 DEBUG Speaking via pocket-tts
+2026-03-05 21:13:14,691 INFO Loading sentencepiece tokenizer from hf://kyutai/pocket-tts-without-voice-cloning/tokenizer.model@d4fdd22ae8c8e1cb3634e150ebeff1dab2d16df3
+2026-03-05 21:13:14,970 INFO Loading TTSModel weights from hf://kyutai/pocket-tts/tts_b6369a24.safetensors@427e3d61b276ed69fdd03de0d185fa8a8d97fc5b
+2026-03-05 21:13:14,973 DEBUG connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=10 socket_options=None
+2026-03-05 21:13:14,984 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11421e3e0>
+2026-03-05 21:13:14,985 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x11432ddc0> server_hostname='huggingface.co' timeout=10
+2026-03-05 21:13:15,000 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11421ec80>
+2026-03-05 21:13:15,000 DEBUG send_request_headers.started request=<Request [b'HEAD']>
+2026-03-05 21:13:15,000 DEBUG send_request_headers.complete
+2026-03-05 21:13:15,000 DEBUG send_request_body.started request=<Request [b'HEAD']>
+2026-03-05 21:13:15,000 DEBUG send_request_body.complete
+2026-03-05 21:13:15,000 DEBUG receive_response_headers.started request=<Request [b'HEAD']>
+2026-03-05 21:13:15,135 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Content-Length', b'125'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 06 Mar 2026 00:13:15 GMT'), (b'ETag', b'W/"7d-0f0Bz1u9F3hT/i/kzLThlDJ6G1w"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-69aa1c1b-07c68977278e46335e0e6bba;efa9d06f-4c6d-4585-8779-0323e46be87a'), (b'RateLimit', b'"resolvers";r=2998;t=173'), (b'RateLimit-Policy', b'"fixed window";"resolvers";q=3000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'GatedRepo'), (b'X-Error-Message', b'Access to model kyutai/pocket-tts is restricted. You must have access to it and be authenticated to access it. Please log in.'), (b'WWW-Authenticate', b'Bearer realm="Authentication required", charset="UTF-8"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 81793e5bedc6d647f1f1ac73230d9312.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'GRU1-P3'), (b'X-Amz-Cf-Id', b'A_opj6X4kluvtD2pzpxXLyzL2QOJO7yQT7jgl-XmBfs8BklOhLVVrw==')])
+2026-03-05 21:13:15,135 INFO HTTP Request: HEAD https://huggingface.co/kyutai/pocket-tts/resolve/427e3d61b276ed69fdd03de0d185fa8a8d97fc5b/tts_b6369a24.safetensors "HTTP/1.1 401 Unauthorized"
+2026-03-05 21:13:15,135 DEBUG receive_response_body.started request=<Request [b'HEAD']>
+2026-03-05 21:13:15,135 DEBUG receive_response_body.complete
+2026-03-05 21:13:15,136 DEBUG response_closed.started
+2026-03-05 21:13:15,136 DEBUG response_closed.complete
+2026-03-05 21:13:15,549 INFO TTS Model loaded successfully. Its size is 471.0 MB
+2026-03-05 21:13:15,565 INFO starting timer now!
+2026-03-05 21:13:15,589 INFO Prompting text took 21 ms
+2026-03-05 21:13:15,606 DEBUG                               Decoded 80 ms of audio with mimi in 10 ms
+2026-03-05 21:13:15,614 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:13:15,622 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,630 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,638 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,646 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,654 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:13:15,663 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:13:15,671 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,679 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:13:15,687 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:13:15,695 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,704 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:13:15,711 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,719 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,727 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,735 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,742 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,750 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,758 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,766 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,774 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,782 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:13:15,790 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,798 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,806 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,813 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,821 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,828 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,836 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,844 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,852 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,860 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,868 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,875 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,883 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,891 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,898 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,906 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,915 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:13:15,923 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,930 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,938 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,946 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,954 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,963 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:13:15,971 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,978 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,986 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:15,994 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,002 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,009 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,017 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,025 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,032 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,040 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,048 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,055 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,063 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,070 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,078 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,086 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,094 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,101 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,109 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,116 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,124 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,131 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,139 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,146 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,153 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,161 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,169 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,176 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,184 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,191 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,199 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,207 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,214 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,222 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,230 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,238 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,246 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,253 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,261 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,269 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,277 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,285 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,292 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:13:16,297 INFO Average generation step time: 6 ms
+2026-03-05 21:13:16,299 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-05 21:13:16,304 DEBUG                               Decoded 80 ms of audio with mimi in 5 ms
+2026-03-05 21:13:16,310 DEBUG                               Decoded 80 ms of audio with mimi in 5 ms
+2026-03-05 21:13:16,310 INFO Waiting for mimi decoder to finish took 0 ms
+2026-03-05 21:13:16,310 INFO Generated: 7360 ms of audio in 744 ms so 9.89x faster than real-time
+2026-03-05 21:13:23,846 DEBUG close.started
+2026-03-05 21:13:23,847 DEBUG close.complete
+2026-03-05 21:14:01,893 WARNING Stop hook payload: {"session_id": "9924d83c-a09b-4449-aea1-342d25f553bf", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-cursed-claude-code/9924d83c-a09b-4449-aea1-342d25f553bf.jsonl", "cwd": "/Users/caique.silva/Code/Personal/cursed-claude-code", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Done. Here's the summary:\n\n- **`pyproject.toml`** created with all shared dependencies\n- **`uv sync`** ran \u2014 venv created at `.venv/`\n- **Shebangs** simplified to `#!/usr/bin/env -S uv run` (no more inline `# /// script` blocks) \u2014 `uv run` will find `pyproject.toml` automatically\n- **`.gitignore`** updated to exclude `.venv/`\n\nTo add/remove dependencies going forward, just edit `pyproject.toml` and run `uv sync`."}
+2026-03-05 21:14:44,348 DEBUG Hook triggered
+2026-03-05 21:14:45,337 DEBUG Requesting roast for prompt: 'does uv use .venv?'
+2026-03-05 21:14:45,724 DEBUG Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-1e89f420-4f5c-4866-9bbf-99a01032f22d', 'content': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a brutally honest, witty critic. The user just submitted a prompt to an AI assistant. Reply with a single short, sharp, cutting remark about their prompt — mock the phrasing, the ambiguity, the laziness, or the premise. Keep it under 20 words. No emojis. No softening. Pure roast.'}, {'role': 'user', 'content': 'does uv use .venv?'}], 'model': 'anthropic/claude-haiku-4-5', 'max_tokens': 100}}
+2026-03-05 21:14:45,735 DEBUG Sending HTTP Request: POST https://openrouter.ai/api/v1/chat/completions
+2026-03-05 21:14:45,735 DEBUG connect_tcp.started host='openrouter.ai' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-05 21:14:45,748 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1082258a0>
+2026-03-05 21:14:45,748 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x1078d8a40> server_hostname='openrouter.ai' timeout=5.0
+2026-03-05 21:14:45,766 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108225930>
+2026-03-05 21:14:45,766 DEBUG send_request_headers.started request=<Request [b'POST']>
+2026-03-05 21:14:45,766 DEBUG send_request_headers.complete
+2026-03-05 21:14:45,766 DEBUG send_request_body.started request=<Request [b'POST']>
+2026-03-05 21:14:45,766 DEBUG send_request_body.complete
+2026-03-05 21:14:45,766 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2026-03-05 21:14:46,436 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 06 Mar 2026 00:14:46 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Origin', b'*'), (b'Permissions-Policy', b'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")'), (b'Referrer-Policy', b'no-referrer, strict-origin-when-cross-origin'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9d7d29801d29e732-GRU')])
+2026-03-05 21:14:46,437 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-05 21:14:46,437 DEBUG receive_response_body.started request=<Request [b'POST']>
+2026-03-05 21:14:46,906 DEBUG receive_response_body.complete
+2026-03-05 21:14:46,906 DEBUG response_closed.started
+2026-03-05 21:14:46,906 DEBUG response_closed.complete
+2026-03-05 21:14:46,906 DEBUG HTTP Response: POST https://openrouter.ai/api/v1/chat/completions "200 OK" Headers({'date': 'Fri, 06 Mar 2026 00:14:46 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-allow-origin': '*', 'permissions-policy': 'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")', 'referrer-policy': 'no-referrer, strict-origin-when-cross-origin', 'x-content-type-options': 'nosniff', 'content-encoding': 'gzip', 'server': 'cloudflare', 'cf-ray': '9d7d29801d29e732-GRU'})
+2026-03-05 21:14:46,906 DEBUG request_id: None
+2026-03-05 21:14:46,916 DEBUG Roast: '"Does UV use .venv" — congrats on crafting the vaguest possible question about a Python tool you haven\'t bothered to Google.'
+2026-03-05 21:14:46,951 DEBUG close.started
+2026-03-05 21:14:46,952 DEBUG close.complete
+2026-03-05 21:15:14,018 DEBUG Speaking via pocket-tts
+2026-03-05 21:15:14,044 INFO Loading sentencepiece tokenizer from hf://kyutai/pocket-tts-without-voice-cloning/tokenizer.model@d4fdd22ae8c8e1cb3634e150ebeff1dab2d16df3
+2026-03-05 21:15:14,326 INFO Loading TTSModel weights from hf://kyutai/pocket-tts/tts_b6369a24.safetensors@427e3d61b276ed69fdd03de0d185fa8a8d97fc5b
+2026-03-05 21:15:14,331 DEBUG connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=10 socket_options=None
+2026-03-05 21:15:14,468 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x112c6d1e0>
+2026-03-05 21:15:14,468 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x11395eac0> server_hostname='huggingface.co' timeout=10
+2026-03-05 21:15:14,483 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x112c6d1b0>
+2026-03-05 21:15:14,484 DEBUG send_request_headers.started request=<Request [b'HEAD']>
+2026-03-05 21:15:14,484 DEBUG send_request_headers.complete
+2026-03-05 21:15:14,484 DEBUG send_request_body.started request=<Request [b'HEAD']>
+2026-03-05 21:15:14,484 DEBUG send_request_body.complete
+2026-03-05 21:15:14,484 DEBUG receive_response_headers.started request=<Request [b'HEAD']>
+2026-03-05 21:15:14,616 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Content-Length', b'125'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 06 Mar 2026 00:15:14 GMT'), (b'ETag', b'W/"7d-0f0Bz1u9F3hT/i/kzLThlDJ6G1w"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-69aa1c92-1ff4b3a107d1309a3b4e487d;e6747116-abc9-4ddf-ac4c-9f91cb2e2f23'), (b'RateLimit', b'"resolvers";r=2997;t=54'), (b'RateLimit-Policy', b'"fixed window";"resolvers";q=3000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'GatedRepo'), (b'X-Error-Message', b'Access to model kyutai/pocket-tts is restricted. You must have access to it and be authenticated to access it. Please log in.'), (b'WWW-Authenticate', b'Bearer realm="Authentication required", charset="UTF-8"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 9e730b35b93cd420f482a2d02782632e.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'GRU1-P3'), (b'X-Amz-Cf-Id', b'w0jXbmWqX-rg8cxT14jYI-hOSYiFgOU8D8TtUS6_mSXZHeHyqTMMmQ==')])
+2026-03-05 21:15:14,616 INFO HTTP Request: HEAD https://huggingface.co/kyutai/pocket-tts/resolve/427e3d61b276ed69fdd03de0d185fa8a8d97fc5b/tts_b6369a24.safetensors "HTTP/1.1 401 Unauthorized"
+2026-03-05 21:15:14,616 DEBUG receive_response_body.started request=<Request [b'HEAD']>
+2026-03-05 21:15:14,616 DEBUG receive_response_body.complete
+2026-03-05 21:15:14,616 DEBUG response_closed.started
+2026-03-05 21:15:14,616 DEBUG response_closed.complete
+2026-03-05 21:15:15,039 INFO TTS Model loaded successfully. Its size is 471.0 MB
+2026-03-05 21:15:15,053 INFO starting timer now!
+2026-03-05 21:15:15,088 INFO Prompting text took 32 ms
+2026-03-05 21:15:15,107 DEBUG                               Decoded 80 ms of audio with mimi in 11 ms
+2026-03-05 21:15:15,115 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,123 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:15:15,131 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,139 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:15:15,147 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,156 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:15:15,164 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,172 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,180 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:15:15,189 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:15:15,197 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:15:15,205 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,212 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,220 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,228 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,235 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,243 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,250 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,258 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,265 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,273 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,281 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,288 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,296 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,303 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,311 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,319 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,327 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,334 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,342 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,350 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,357 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,365 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,373 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,380 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,388 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,396 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,404 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,412 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,420 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,428 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,435 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,444 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:15:15,451 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,459 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,466 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,474 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,481 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,489 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,497 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,505 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,512 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,520 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,527 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,535 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,542 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,550 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,558 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,565 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,573 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,581 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,588 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,596 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,603 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,611 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,619 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,626 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,634 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,642 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,649 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,657 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,665 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,672 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,680 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,689 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:15:15,696 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,704 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,712 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,719 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,727 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,735 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,743 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,751 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:15:15,759 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:15:15,767 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,775 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,783 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:15:15,791 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,799 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:15:15,804 INFO Average generation step time: 7 ms
+2026-03-05 21:15:15,806 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-05 21:15:15,811 DEBUG                               Decoded 80 ms of audio with mimi in 4 ms
+2026-03-05 21:15:15,811 INFO Waiting for mimi decoder to finish took 0 ms
+2026-03-05 21:15:15,811 INFO Generated: 7360 ms of audio in 758 ms so 9.71x faster than real-time
+2026-03-05 21:15:23,365 DEBUG close.started
+2026-03-05 21:15:23,365 DEBUG close.complete
+2026-03-05 21:15:28,199 WARNING Stop hook payload: {"session_id": "9924d83c-a09b-4449-aea1-342d25f553bf", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-cursed-claude-code/9924d83c-a09b-4449-aea1-342d25f553bf.jsonl", "cwd": "/Users/caique.silva/Code/Personal/cursed-claude-code", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Yes, `uv` creates and uses `.venv` by default in the project directory. When you run `uv sync` or `uv run`, it automatically finds and uses `.venv/`."}
+2026-03-05 21:17:07,004 DEBUG Hook triggered
+2026-03-05 21:17:07,346 DEBUG Requesting roast for prompt: 'commit and push the code'
+2026-03-05 21:17:07,442 DEBUG Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-cc6dcdbd-8357-4a0e-b3d7-2ab1083d8be5', 'content': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a brutally honest, witty critic. The user just submitted a prompt to an AI assistant. Reply with a single short, sharp, cutting remark about their prompt — mock the phrasing, the ambiguity, the laziness, or the premise. Keep it under 20 words. No emojis. No softening. Pure roast.'}, {'role': 'user', 'content': 'commit and push the code'}], 'model': 'anthropic/claude-haiku-4-5', 'max_tokens': 100}}
+2026-03-05 21:17:07,453 DEBUG Sending HTTP Request: POST https://openrouter.ai/api/v1/chat/completions
+2026-03-05 21:17:07,453 DEBUG connect_tcp.started host='openrouter.ai' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-05 21:17:07,493 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10bd5e800>
+2026-03-05 21:17:07,493 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x10b63edc0> server_hostname='openrouter.ai' timeout=5.0
+2026-03-05 21:17:07,512 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10bd5e890>
+2026-03-05 21:17:07,512 DEBUG send_request_headers.started request=<Request [b'POST']>
+2026-03-05 21:17:07,512 DEBUG send_request_headers.complete
+2026-03-05 21:17:07,512 DEBUG send_request_body.started request=<Request [b'POST']>
+2026-03-05 21:17:07,512 DEBUG send_request_body.complete
+2026-03-05 21:17:07,512 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2026-03-05 21:17:08,205 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 06 Mar 2026 00:17:08 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Origin', b'*'), (b'Permissions-Policy', b'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")'), (b'Referrer-Policy', b'no-referrer, strict-origin-when-cross-origin'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9d7d2cf608ce8913-GRU')])
+2026-03-05 21:17:08,206 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-05 21:17:08,206 DEBUG receive_response_body.started request=<Request [b'POST']>
+2026-03-05 21:17:08,680 DEBUG receive_response_body.complete
+2026-03-05 21:17:08,680 DEBUG response_closed.started
+2026-03-05 21:17:08,680 DEBUG response_closed.complete
+2026-03-05 21:17:08,681 DEBUG HTTP Response: POST https://openrouter.ai/api/v1/chat/completions "200 OK" Headers({'date': 'Fri, 06 Mar 2026 00:17:08 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-allow-origin': '*', 'permissions-policy': 'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")', 'referrer-policy': 'no-referrer, strict-origin-when-cross-origin', 'x-content-type-options': 'nosniff', 'content-encoding': 'gzip', 'server': 'cloudflare', 'cf-ray': '9d7d2cf608ce8913-GRU'})
+2026-03-05 21:17:08,681 DEBUG request_id: None
+2026-03-05 21:17:08,686 DEBUG Roast: 'You want an AI to run git commands? Pretty sure your terminal is right there, buddy.'
+2026-03-05 21:17:08,947 DEBUG close.started
+2026-03-05 21:17:08,947 DEBUG close.complete
+2026-03-05 21:17:10,022 DEBUG Speaking via pocket-tts
+2026-03-05 21:17:10,047 INFO Loading sentencepiece tokenizer from hf://kyutai/pocket-tts-without-voice-cloning/tokenizer.model@d4fdd22ae8c8e1cb3634e150ebeff1dab2d16df3
+2026-03-05 21:17:10,316 INFO Loading TTSModel weights from hf://kyutai/pocket-tts/tts_b6369a24.safetensors@427e3d61b276ed69fdd03de0d185fa8a8d97fc5b
+2026-03-05 21:17:10,320 DEBUG connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=10 socket_options=None
+2026-03-05 21:17:10,450 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1172f4e80>
+2026-03-05 21:17:10,450 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x1174a6ac0> server_hostname='huggingface.co' timeout=10
+2026-03-05 21:17:10,466 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1172f6c80>
+2026-03-05 21:17:10,466 DEBUG send_request_headers.started request=<Request [b'HEAD']>
+2026-03-05 21:17:10,467 DEBUG send_request_headers.complete
+2026-03-05 21:17:10,467 DEBUG send_request_body.started request=<Request [b'HEAD']>
+2026-03-05 21:17:10,467 DEBUG send_request_body.complete
+2026-03-05 21:17:10,467 DEBUG receive_response_headers.started request=<Request [b'HEAD']>
+2026-03-05 21:17:10,608 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Content-Length', b'125'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 06 Mar 2026 00:17:10 GMT'), (b'ETag', b'W/"7d-0f0Bz1u9F3hT/i/kzLThlDJ6G1w"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-69aa1d06-60ed2cb446f8f8740be0f63d;485355e1-c670-4931-8e28-7f43a690ee99'), (b'RateLimit', b'"resolvers";r=2999;t=238'), (b'RateLimit-Policy', b'"fixed window";"resolvers";q=3000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'GatedRepo'), (b'X-Error-Message', b'Access to model kyutai/pocket-tts is restricted. You must have access to it and be authenticated to access it. Please log in.'), (b'WWW-Authenticate', b'Bearer realm="Authentication required", charset="UTF-8"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 ae1b720146d352b49aa066c4ae3d562c.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'GRU1-P3'), (b'X-Amz-Cf-Id', b'ToftUv6WtPynWDH-XSNIQ78Db48pS8nVxJYnyw11G0OJUTjh7J3zVQ==')])
+2026-03-05 21:17:10,609 INFO HTTP Request: HEAD https://huggingface.co/kyutai/pocket-tts/resolve/427e3d61b276ed69fdd03de0d185fa8a8d97fc5b/tts_b6369a24.safetensors "HTTP/1.1 401 Unauthorized"
+2026-03-05 21:17:10,609 DEBUG receive_response_body.started request=<Request [b'HEAD']>
+2026-03-05 21:17:10,609 DEBUG receive_response_body.complete
+2026-03-05 21:17:10,609 DEBUG response_closed.started
+2026-03-05 21:17:10,609 DEBUG response_closed.complete
+2026-03-05 21:17:10,680 INFO TTS Model loaded successfully. Its size is 471.0 MB
+2026-03-05 21:17:10,684 INFO starting timer now!
+2026-03-05 21:17:10,709 INFO Prompting text took 23 ms
+2026-03-05 21:17:10,729 DEBUG                               Decoded 80 ms of audio with mimi in 11 ms
+2026-03-05 21:17:10,739 DEBUG                               Decoded 80 ms of audio with mimi in 9 ms
+2026-03-05 21:17:10,748 DEBUG                               Decoded 80 ms of audio with mimi in 9 ms
+2026-03-05 21:17:10,757 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:17:10,767 DEBUG                               Decoded 80 ms of audio with mimi in 9 ms
+2026-03-05 21:17:10,777 DEBUG                               Decoded 80 ms of audio with mimi in 9 ms
+2026-03-05 21:17:10,786 DEBUG                               Decoded 80 ms of audio with mimi in 9 ms
+2026-03-05 21:17:10,797 DEBUG                               Decoded 80 ms of audio with mimi in 9 ms
+2026-03-05 21:17:10,806 DEBUG                               Decoded 80 ms of audio with mimi in 9 ms
+2026-03-05 21:17:10,815 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:17:10,824 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:17:10,832 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:17:10,840 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,849 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,857 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,864 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,872 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,880 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,887 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,895 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,903 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,911 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,919 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,927 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,935 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,942 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,950 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,958 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,966 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,973 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,982 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,990 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:10,998 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,006 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:17:11,013 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,021 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,029 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,037 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,044 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,054 DEBUG                               Decoded 80 ms of audio with mimi in 9 ms
+2026-03-05 21:17:11,062 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,070 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,077 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-05 21:17:11,085 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,092 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,100 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,108 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,116 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:17:11,125 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-05 21:17:11,132 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,140 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,149 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-05 21:17:11,150 INFO Average generation step time: 7 ms
+2026-03-05 21:17:11,154 DEBUG                               Decoded 80 ms of audio with mimi in 5 ms
+2026-03-05 21:17:11,159 DEBUG                               Decoded 80 ms of audio with mimi in 5 ms
+2026-03-05 21:17:11,159 INFO Waiting for mimi decoder to finish took 0 ms
+2026-03-05 21:17:11,159 INFO Generated: 4320 ms of audio in 475 ms so 9.09x faster than real-time
+2026-03-05 21:17:15,623 DEBUG close.started
+2026-03-05 21:17:15,624 DEBUG close.complete
+2026-03-05 21:17:27,187 WARNING Stop hook payload: {"session_id": "9924d83c-a09b-4449-aea1-342d25f553bf", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-cursed-claude-code/9924d83c-a09b-4449-aea1-342d25f553bf.jsonl", "cwd": "/Users/caique.silva/Code/Personal/cursed-claude-code", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Pushed. Included `pyproject.toml`, `uv.lock`, updated shebangs, and `.gitignore`."}
+2026-03-07 19:03:14,724 DEBUG Hook triggered
+2026-03-07 19:03:15,153 DEBUG Requesting roast for prompt: 'If we move the logging.basicConfig to shared, would it work? What are the pros a'
+2026-03-07 19:03:15,273 DEBUG Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-413f72f5-75d3-47e0-b5cd-7005f2953a02', 'content': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a brutally honest, witty critic. The user just submitted a prompt to an AI assistant. Reply with a single short, sharp, cutting remark about their prompt — mock the phrasing, the ambiguity, the laziness, or the premise. Keep it under 20 words. No emojis. No softening. Pure roast.'}, {'role': 'user', 'content': 'If we move the logging.basicConfig to shared, would it work? What are the pros and cons?'}], 'model': 'anthropic/claude-haiku-4-5', 'max_tokens': 100}}
+2026-03-07 19:03:15,286 DEBUG Sending HTTP Request: POST https://openrouter.ai/api/v1/chat/completions
+2026-03-07 19:03:15,286 DEBUG connect_tcp.started host='openrouter.ai' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-07 19:03:15,345 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10a056800>
+2026-03-07 19:03:15,345 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x109936dc0> server_hostname='openrouter.ai' timeout=5.0
+2026-03-07 19:03:15,363 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10a056890>
+2026-03-07 19:03:15,363 DEBUG send_request_headers.started request=<Request [b'POST']>
+2026-03-07 19:03:15,363 DEBUG send_request_headers.complete
+2026-03-07 19:03:15,363 DEBUG send_request_body.started request=<Request [b'POST']>
+2026-03-07 19:03:15,363 DEBUG send_request_body.complete
+2026-03-07 19:03:15,363 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2026-03-07 19:03:17,058 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 07 Mar 2026 22:03:17 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Origin', b'*'), (b'Permissions-Policy', b'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")'), (b'Referrer-Policy', b'no-referrer, strict-origin-when-cross-origin'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9d8ce39d1fb5a593-GRU')])
+2026-03-07 19:03:17,059 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 19:03:17,059 DEBUG receive_response_body.started request=<Request [b'POST']>
+2026-03-07 19:03:17,572 DEBUG receive_response_body.complete
+2026-03-07 19:03:17,572 DEBUG response_closed.started
+2026-03-07 19:03:17,572 DEBUG response_closed.complete
+2026-03-07 19:03:17,572 DEBUG HTTP Response: POST https://openrouter.ai/api/v1/chat/completions "200 OK" Headers({'date': 'Sat, 07 Mar 2026 22:03:17 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-allow-origin': '*', 'permissions-policy': 'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")', 'referrer-policy': 'no-referrer, strict-origin-when-cross-origin', 'x-content-type-options': 'nosniff', 'content-encoding': 'gzip', 'server': 'cloudflare', 'cf-ray': '9d8ce39d1fb5a593-GRU'})
+2026-03-07 19:03:17,572 DEBUG request_id: None
+2026-03-07 19:03:17,583 DEBUG Roast: '"We" move it? "Shared"? "It"? You\'ve submitted three pronouns and zero specifics. Try again with actual code or context.'
+2026-03-07 19:03:18,026 DEBUG close.started
+2026-03-07 19:03:18,027 DEBUG close.complete
+2026-03-07 19:03:19,905 DEBUG Speaking via pocket-tts
+2026-03-07 19:03:19,941 INFO Loading sentencepiece tokenizer from hf://kyutai/pocket-tts-without-voice-cloning/tokenizer.model@d4fdd22ae8c8e1cb3634e150ebeff1dab2d16df3
+2026-03-07 19:03:20,218 INFO Loading TTSModel weights from hf://kyutai/pocket-tts/tts_b6369a24.safetensors@427e3d61b276ed69fdd03de0d185fa8a8d97fc5b
+2026-03-07 19:03:20,222 DEBUG connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=10 socket_options=None
+2026-03-07 19:03:20,303 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1156ec790>
+2026-03-07 19:03:20,303 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x1158a2ac0> server_hostname='huggingface.co' timeout=10
+2026-03-07 19:03:20,319 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1156ef130>
+2026-03-07 19:03:20,319 DEBUG send_request_headers.started request=<Request [b'HEAD']>
+2026-03-07 19:03:20,319 DEBUG send_request_headers.complete
+2026-03-07 19:03:20,319 DEBUG send_request_body.started request=<Request [b'HEAD']>
+2026-03-07 19:03:20,319 DEBUG send_request_body.complete
+2026-03-07 19:03:20,319 DEBUG receive_response_headers.started request=<Request [b'HEAD']>
+2026-03-07 19:03:20,455 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Content-Length', b'125'), (b'Connection', b'keep-alive'), (b'Date', b'Sat, 07 Mar 2026 22:03:20 GMT'), (b'ETag', b'W/"7d-0f0Bz1u9F3hT/i/kzLThlDJ6G1w"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-69aca0a8-2a735bec529a2e863c5d5da4;6ca759b0-3e11-469e-a23c-dcc78a7f7cd6'), (b'RateLimit', b'"resolvers";r=2999;t=168'), (b'RateLimit-Policy', b'"fixed window";"resolvers";q=3000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'GatedRepo'), (b'X-Error-Message', b'Access to model kyutai/pocket-tts is restricted. You must have access to it and be authenticated to access it. Please log in.'), (b'WWW-Authenticate', b'Bearer realm="Authentication required", charset="UTF-8"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 4c367553462aee327c63b772b1c903e6.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'GRU1-P3'), (b'X-Amz-Cf-Id', b'_ZjOFzLZujqn3I5jGLD2ElqEQT06Hs2wLOSOA-Y4TchbGKPkwzoN8A==')])
+2026-03-07 19:03:20,456 INFO HTTP Request: HEAD https://huggingface.co/kyutai/pocket-tts/resolve/427e3d61b276ed69fdd03de0d185fa8a8d97fc5b/tts_b6369a24.safetensors "HTTP/1.1 401 Unauthorized"
+2026-03-07 19:03:20,456 DEBUG receive_response_body.started request=<Request [b'HEAD']>
+2026-03-07 19:03:20,456 DEBUG receive_response_body.complete
+2026-03-07 19:03:20,456 DEBUG response_closed.started
+2026-03-07 19:03:20,456 DEBUG response_closed.complete
+2026-03-07 19:03:20,832 INFO TTS Model loaded successfully. Its size is 471.0 MB
+2026-03-07 19:03:20,846 INFO starting timer now!
+2026-03-07 19:03:20,894 INFO Prompting text took 45 ms
+2026-03-07 19:03:20,917 DEBUG                               Decoded 80 ms of audio with mimi in 14 ms
+2026-03-07 19:03:20,926 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:03:20,934 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:03:20,942 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:20,950 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:03:20,958 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:20,966 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:03:20,974 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:20,981 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:20,989 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:20,996 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,003 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,011 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,018 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,026 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-07 19:03:21,033 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,040 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,048 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,055 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,062 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,070 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,077 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,085 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,092 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,100 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,107 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-07 19:03:21,115 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,122 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,130 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,138 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,145 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,153 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,161 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,168 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,176 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,183 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,191 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,198 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,206 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,213 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,221 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,228 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,236 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,244 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,252 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,259 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,267 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,275 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,282 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,290 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,297 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,305 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,312 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,319 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,328 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:03:21,336 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,343 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,351 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,359 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,367 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,374 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,382 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,389 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-07 19:03:21,397 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,405 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,412 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,421 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,428 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,435 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,443 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,451 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,458 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,466 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,474 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,482 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,489 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,497 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,504 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,512 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,520 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,527 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,535 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,543 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,550 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,557 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,566 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,573 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,582 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,590 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,598 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:03:21,607 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:03:21,615 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,622 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,630 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,637 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,645 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,652 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:03:21,653 INFO Average generation step time: 7 ms
+2026-03-07 19:03:21,658 DEBUG                               Decoded 80 ms of audio with mimi in 5 ms
+2026-03-07 19:03:21,663 DEBUG                               Decoded 80 ms of audio with mimi in 4 ms
+2026-03-07 19:03:21,668 DEBUG                               Decoded 80 ms of audio with mimi in 4 ms
+2026-03-07 19:03:21,668 INFO Waiting for mimi decoder to finish took 0 ms
+2026-03-07 19:03:21,668 INFO Generated: 8000 ms of audio in 822 ms so 9.73x faster than real-time
+2026-03-07 19:03:29,823 DEBUG close.started
+2026-03-07 19:03:29,823 DEBUG close.complete
+2026-03-07 19:03:47,370 WARNING Stop hook payload: {"session_id": "f0d3f0dd-a9a8-4941-a42f-bb0c830f78d2", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-cursed-claude-code/f0d3f0dd-a9a8-4941-a42f-bb0c830f78d2.jsonl", "cwd": "/Users/caique.silva/Code/Personal/cursed-claude-code", "permission_mode": "default", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "**Yes, it would work**, since each hook script is a standalone process \u2014 Python's module import system runs `shared.py` once per process, so `basicConfig` in shared would execute before any hook code runs.\n\n**Pros:**\n- Eliminates the repeated `logging.basicConfig(...)` boilerplate in every hook file\n- Single place to change the log format, filename, or handler\n\n**Cons:**\n- **Loss of per-hook log level control** \u2014 currently `user_prompt_submit.py` uses `DEBUG` while `stop.py` and `task_completed.py` use `WARNING`. Moving to shared means one level for all, unless you pass the level as a parameter or use env vars\n- **`basicConfig` only works once** \u2014 if anything imported before `shared` already configured logging, the call in shared would silently be ignored (this is a general Python footgun, not specific to your setup)\n- **Implicit side effect on import** \u2014 calling `basicConfig` as a module-level side effect in `shared.py` is a bit surprising for a \"utilities\" module; it's a matter of style\n\nThe simplest move would be to expose a `setup_logging(level=logging.WARNING)` function in `shared.py` that each hook calls with its desired level \u2014 keeps it DRY without losing per-hook control."}
+2026-03-07 19:04:24,263 DEBUG Hook triggered
+2026-03-07 19:04:24,596 DEBUG Requesting roast for prompt: "Ok, let's move it"
+2026-03-07 19:04:24,696 DEBUG Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-20246a93-6c74-45c9-99c3-5f881fdef5cf', 'content': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a brutally honest, witty critic. The user just submitted a prompt to an AI assistant. Reply with a single short, sharp, cutting remark about their prompt — mock the phrasing, the ambiguity, the laziness, or the premise. Keep it under 20 words. No emojis. No softening. Pure roast.'}, {'role': 'user', 'content': "Ok, let's move it"}], 'model': 'anthropic/claude-haiku-4-5', 'max_tokens': 100}}
+2026-03-07 19:04:24,706 DEBUG Sending HTTP Request: POST https://openrouter.ai/api/v1/chat/completions
+2026-03-07 19:04:24,707 DEBUG connect_tcp.started host='openrouter.ai' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-07 19:04:24,721 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10c9de800>
+2026-03-07 19:04:24,721 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x10c2bedc0> server_hostname='openrouter.ai' timeout=5.0
+2026-03-07 19:04:24,739 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10c9de890>
+2026-03-07 19:04:24,739 DEBUG send_request_headers.started request=<Request [b'POST']>
+2026-03-07 19:04:24,739 DEBUG send_request_headers.complete
+2026-03-07 19:04:24,739 DEBUG send_request_body.started request=<Request [b'POST']>
+2026-03-07 19:04:24,739 DEBUG send_request_body.complete
+2026-03-07 19:04:24,739 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2026-03-07 19:04:26,022 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 07 Mar 2026 22:04:25 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Origin', b'*'), (b'Permissions-Policy', b'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")'), (b'Referrer-Policy', b'no-referrer, strict-origin-when-cross-origin'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9d8ce54eacd7e90b-GRU')])
+2026-03-07 19:04:26,023 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 19:04:26,023 DEBUG receive_response_body.started request=<Request [b'POST']>
+2026-03-07 19:04:26,225 DEBUG receive_response_body.complete
+2026-03-07 19:04:26,225 DEBUG response_closed.started
+2026-03-07 19:04:26,225 DEBUG response_closed.complete
+2026-03-07 19:04:26,226 DEBUG HTTP Response: POST https://openrouter.ai/api/v1/chat/completions "200 OK" Headers({'date': 'Sat, 07 Mar 2026 22:04:25 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-allow-origin': '*', 'permissions-policy': 'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")', 'referrer-policy': 'no-referrer, strict-origin-when-cross-origin', 'x-content-type-options': 'nosniff', 'content-encoding': 'gzip', 'server': 'cloudflare', 'cf-ray': '9d8ce54eacd7e90b-GRU'})
+2026-03-07 19:04:26,226 DEBUG request_id: None
+2026-03-07 19:04:26,234 DEBUG Roast: '"Move it" where? This prompt has less substance than a ghost with commitment issues.'
+2026-03-07 19:04:26,448 DEBUG close.started
+2026-03-07 19:04:26,448 DEBUG close.complete
+2026-03-07 19:04:27,344 DEBUG Speaking via pocket-tts
+2026-03-07 19:04:27,371 INFO Loading sentencepiece tokenizer from hf://kyutai/pocket-tts-without-voice-cloning/tokenizer.model@d4fdd22ae8c8e1cb3634e150ebeff1dab2d16df3
+2026-03-07 19:04:27,645 INFO Loading TTSModel weights from hf://kyutai/pocket-tts/tts_b6369a24.safetensors@427e3d61b276ed69fdd03de0d185fa8a8d97fc5b
+2026-03-07 19:04:27,649 DEBUG connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=10 socket_options=None
+2026-03-07 19:04:27,662 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x117fe4310>
+2026-03-07 19:04:27,662 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x1181beac0> server_hostname='huggingface.co' timeout=10
+2026-03-07 19:04:27,678 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x117fe7370>
+2026-03-07 19:04:27,678 DEBUG send_request_headers.started request=<Request [b'HEAD']>
+2026-03-07 19:04:27,678 DEBUG send_request_headers.complete
+2026-03-07 19:04:27,678 DEBUG send_request_body.started request=<Request [b'HEAD']>
+2026-03-07 19:04:27,678 DEBUG send_request_body.complete
+2026-03-07 19:04:27,678 DEBUG receive_response_headers.started request=<Request [b'HEAD']>
+2026-03-07 19:04:27,810 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Content-Length', b'125'), (b'Connection', b'keep-alive'), (b'Date', b'Sat, 07 Mar 2026 22:04:27 GMT'), (b'ETag', b'W/"7d-0f0Bz1u9F3hT/i/kzLThlDJ6G1w"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-69aca0eb-27b7049f593ebab843e737b8;9ed162ec-f053-45b5-86d7-07d4d59fd16e'), (b'RateLimit', b'"resolvers";r=2998;t=101'), (b'RateLimit-Policy', b'"fixed window";"resolvers";q=3000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'GatedRepo'), (b'X-Error-Message', b'Access to model kyutai/pocket-tts is restricted. You must have access to it and be authenticated to access it. Please log in.'), (b'WWW-Authenticate', b'Bearer realm="Authentication required", charset="UTF-8"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 e705083685b9f33be84a1a73ec9f2d10.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'GRU1-P3'), (b'X-Amz-Cf-Id', b'4DpthMoDAkNIoiSxJkIwDzsFEA1hl8e2XR2UtEZTkFutLf5R_TTIwg==')])
+2026-03-07 19:04:27,810 INFO HTTP Request: HEAD https://huggingface.co/kyutai/pocket-tts/resolve/427e3d61b276ed69fdd03de0d185fa8a8d97fc5b/tts_b6369a24.safetensors "HTTP/1.1 401 Unauthorized"
+2026-03-07 19:04:27,810 DEBUG receive_response_body.started request=<Request [b'HEAD']>
+2026-03-07 19:04:27,810 DEBUG receive_response_body.complete
+2026-03-07 19:04:27,810 DEBUG response_closed.started
+2026-03-07 19:04:27,810 DEBUG response_closed.complete
+2026-03-07 19:04:28,064 INFO TTS Model loaded successfully. Its size is 471.0 MB
+2026-03-07 19:04:28,077 INFO starting timer now!
+2026-03-07 19:04:28,100 INFO Prompting text took 22 ms
+2026-03-07 19:04:28,116 DEBUG                               Decoded 80 ms of audio with mimi in 9 ms
+2026-03-07 19:04:28,124 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:04:28,132 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,140 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,149 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:04:28,157 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,165 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:04:28,173 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,181 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:04:28,189 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,197 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,205 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,213 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,220 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,228 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,236 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,244 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,252 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,260 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,267 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,275 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,283 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,291 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,298 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,306 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,314 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,322 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,329 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,337 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,345 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,353 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,361 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,369 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:04:28,378 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,385 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,393 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,400 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,408 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,415 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,423 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,430 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,438 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,445 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,453 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,460 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,468 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,475 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,483 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,490 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,498 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,505 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-07 19:04:28,512 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,520 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,527 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,534 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-07 19:04:28,542 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,549 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,556 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,564 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,571 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,579 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,586 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,593 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,601 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,608 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,615 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:04:28,616 INFO Average generation step time: 6 ms
+2026-03-07 19:04:28,621 DEBUG                               Decoded 80 ms of audio with mimi in 5 ms
+2026-03-07 19:04:28,626 DEBUG                               Decoded 80 ms of audio with mimi in 4 ms
+2026-03-07 19:04:28,626 INFO Waiting for mimi decoder to finish took 0 ms
+2026-03-07 19:04:28,626 INFO Generated: 5440 ms of audio in 548 ms so 9.93x faster than real-time
+2026-03-07 19:04:34,209 DEBUG close.started
+2026-03-07 19:04:34,209 DEBUG close.complete
+2026-03-07 19:05:11,418 WARNING Stop hook payload: {"session_id": "f0d3f0dd-a9a8-4941-a42f-bb0c830f78d2", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-cursed-claude-code/f0d3f0dd-a9a8-4941-a42f-bb0c830f78d2.jsonl", "cwd": "/Users/caique.silva/Code/Personal/cursed-claude-code", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Done. `setup_logging(level=logging.WARNING)` is now in `shared.py`. Each hook calls it with its desired level \u2014 `user_prompt_submit` passes `DEBUG`, the other two use the default `WARNING`. `LOG_FILE` is no longer imported by the hooks directly."}
+2026-03-07 19:05:29,680 DEBUG Hook triggered
+2026-03-07 19:05:29,939 DEBUG Requesting roast for prompt: 'commit and push the changes'
+2026-03-07 19:05:30,017 DEBUG Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-21da19db-5158-497d-aee9-39cb10ced83d', 'content': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a brutally honest, witty critic. The user just submitted a prompt to an AI assistant. Reply with a single short, sharp, cutting remark about their prompt — mock the phrasing, the ambiguity, the laziness, or the premise. Keep it under 20 words. No emojis. No softening. Pure roast.'}, {'role': 'user', 'content': 'commit and push the changes'}], 'model': 'anthropic/claude-haiku-4-5', 'max_tokens': 100}}
+2026-03-07 19:05:30,026 DEBUG Sending HTTP Request: POST https://openrouter.ai/api/v1/chat/completions
+2026-03-07 19:05:30,026 DEBUG connect_tcp.started host='openrouter.ai' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-07 19:05:30,043 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10a4567a0>
+2026-03-07 19:05:30,043 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x109d36e40> server_hostname='openrouter.ai' timeout=5.0
+2026-03-07 19:05:30,061 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10a456830>
+2026-03-07 19:05:30,061 DEBUG send_request_headers.started request=<Request [b'POST']>
+2026-03-07 19:05:30,061 DEBUG send_request_headers.complete
+2026-03-07 19:05:30,061 DEBUG send_request_body.started request=<Request [b'POST']>
+2026-03-07 19:05:30,061 DEBUG send_request_body.complete
+2026-03-07 19:05:30,062 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2026-03-07 19:05:31,140 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 07 Mar 2026 22:05:31 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Origin', b'*'), (b'Permissions-Policy', b'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")'), (b'Referrer-Policy', b'no-referrer, strict-origin-when-cross-origin'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9d8ce6e6fc702c08-GRU')])
+2026-03-07 19:05:31,141 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 19:05:31,141 DEBUG receive_response_body.started request=<Request [b'POST']>
+2026-03-07 19:05:31,576 DEBUG receive_response_body.complete
+2026-03-07 19:05:31,576 DEBUG response_closed.started
+2026-03-07 19:05:31,576 DEBUG response_closed.complete
+2026-03-07 19:05:31,576 DEBUG HTTP Response: POST https://openrouter.ai/api/v1/chat/completions "200 OK" Headers({'date': 'Sat, 07 Mar 2026 22:05:31 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-allow-origin': '*', 'permissions-policy': 'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")', 'referrer-policy': 'no-referrer, strict-origin-when-cross-origin', 'x-content-type-options': 'nosniff', 'content-encoding': 'gzip', 'server': 'cloudflare', 'cf-ray': '9d8ce6e6fc702c08-GRU'})
+2026-03-07 19:05:31,576 DEBUG request_id: None
+2026-03-07 19:05:31,585 DEBUG Roast: "You've submitted a git command to an AI critic instead of, y'know, actually typing it into a terminal. Impressive efficiency."
+2026-03-07 19:05:31,796 DEBUG close.started
+2026-03-07 19:05:31,796 DEBUG close.complete
+2026-03-07 19:05:32,694 DEBUG Speaking via pocket-tts
+2026-03-07 19:05:32,719 INFO Loading sentencepiece tokenizer from hf://kyutai/pocket-tts-without-voice-cloning/tokenizer.model@d4fdd22ae8c8e1cb3634e150ebeff1dab2d16df3
+2026-03-07 19:05:32,984 INFO Loading TTSModel weights from hf://kyutai/pocket-tts/tts_b6369a24.safetensors@427e3d61b276ed69fdd03de0d185fa8a8d97fc5b
+2026-03-07 19:05:32,988 DEBUG connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=10 socket_options=None
+2026-03-07 19:05:33,109 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x115a6b8b0>
+2026-03-07 19:05:33,109 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x115c1ab40> server_hostname='huggingface.co' timeout=10
+2026-03-07 19:05:33,125 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x115a685e0>
+2026-03-07 19:05:33,125 DEBUG send_request_headers.started request=<Request [b'HEAD']>
+2026-03-07 19:05:33,125 DEBUG send_request_headers.complete
+2026-03-07 19:05:33,125 DEBUG send_request_body.started request=<Request [b'HEAD']>
+2026-03-07 19:05:33,125 DEBUG send_request_body.complete
+2026-03-07 19:05:33,125 DEBUG receive_response_headers.started request=<Request [b'HEAD']>
+2026-03-07 19:05:33,260 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Content-Length', b'125'), (b'Connection', b'keep-alive'), (b'Date', b'Sat, 07 Mar 2026 22:05:33 GMT'), (b'ETag', b'W/"7d-0f0Bz1u9F3hT/i/kzLThlDJ6G1w"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-69aca12d-544c3774560a9857216d17d1;97c6747d-63d5-4644-8cae-f1d3fb7fe90c'), (b'RateLimit', b'"resolvers";r=2997;t=35'), (b'RateLimit-Policy', b'"fixed window";"resolvers";q=3000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'GatedRepo'), (b'X-Error-Message', b'Access to model kyutai/pocket-tts is restricted. You must have access to it and be authenticated to access it. Please log in.'), (b'WWW-Authenticate', b'Bearer realm="Authentication required", charset="UTF-8"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 95827c3bc7798e08d0599e18d188d6ac.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'GRU1-P3'), (b'X-Amz-Cf-Id', b'I-95mucWHYmF8QB35NT3blHwX01sILa8sJbl_ZknSfLRjh7FChtTvQ==')])
+2026-03-07 19:05:33,261 INFO HTTP Request: HEAD https://huggingface.co/kyutai/pocket-tts/resolve/427e3d61b276ed69fdd03de0d185fa8a8d97fc5b/tts_b6369a24.safetensors "HTTP/1.1 401 Unauthorized"
+2026-03-07 19:05:33,261 DEBUG receive_response_body.started request=<Request [b'HEAD']>
+2026-03-07 19:05:33,261 DEBUG receive_response_body.complete
+2026-03-07 19:05:33,261 DEBUG response_closed.started
+2026-03-07 19:05:33,261 DEBUG response_closed.complete
+2026-03-07 19:05:33,402 INFO TTS Model loaded successfully. Its size is 471.0 MB
+2026-03-07 19:05:33,415 INFO starting timer now!
+2026-03-07 19:05:33,447 INFO Prompting text took 29 ms
+2026-03-07 19:05:33,462 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:05:33,470 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:05:33,478 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,486 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,494 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,502 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,510 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,518 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,526 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:05:33,535 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:05:33,543 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:05:33,550 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,558 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,566 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,574 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,582 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,590 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,598 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,606 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:05:33,614 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,621 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,629 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,636 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,644 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,652 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,660 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,667 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,675 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,682 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,690 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,698 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,706 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,713 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,721 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,728 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,736 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,743 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,751 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,759 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,767 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,774 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,782 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,790 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,798 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,806 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,814 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,821 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,829 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,837 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,845 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,852 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,860 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,868 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,876 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,884 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,892 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,900 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,907 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,916 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,924 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:05:33,933 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:05:33,940 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,948 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,956 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,963 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,970 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,978 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,985 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:33,993 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,000 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,008 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,015 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,023 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,031 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,039 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,047 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,054 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,062 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,069 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,076 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,084 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,091 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,099 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,106 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,114 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,122 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,130 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:05:34,138 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,146 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,154 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,162 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,170 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,178 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:05:34,186 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:05:34,191 INFO Average generation step time: 7 ms
+2026-03-07 19:05:34,193 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-07 19:05:34,198 DEBUG                               Decoded 80 ms of audio with mimi in 5 ms
+2026-03-07 19:05:34,203 DEBUG                               Decoded 80 ms of audio with mimi in 4 ms
+2026-03-07 19:05:34,203 INFO Waiting for mimi decoder to finish took 0 ms
+2026-03-07 19:05:34,203 INFO Generated: 7760 ms of audio in 788 ms so 9.85x faster than real-time
+2026-03-07 19:05:42,110 DEBUG close.started
+2026-03-07 19:05:42,111 DEBUG close.complete
+2026-03-07 19:06:01,714 WARNING Stop hook payload: {"session_id": "f0d3f0dd-a9a8-4941-a42f-bb0c830f78d2", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-cursed-claude-code/f0d3f0dd-a9a8-4941-a42f-bb0c830f78d2.jsonl", "cwd": "/Users/caique.silva/Code/Personal/cursed-claude-code", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Committed and pushed as `20ab588`."}
+2026-03-07 19:07:07,766 DEBUG Hook triggered
+2026-03-07 19:07:08,033 DEBUG Requesting roast for prompt: 'Ignore DEBUG logs on the logs file'
+2026-03-07 19:07:08,112 DEBUG Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-c8a76ca9-9425-47b0-89ed-e5b2aea171fa', 'content': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a brutally honest, witty critic. The user just submitted a prompt to an AI assistant. Reply with a single short, sharp, cutting remark about their prompt — mock the phrasing, the ambiguity, the laziness, or the premise. Keep it under 20 words. No emojis. No softening. Pure roast.'}, {'role': 'user', 'content': 'Ignore DEBUG logs on the logs file'}], 'model': 'anthropic/claude-haiku-4-5', 'max_tokens': 100}}
+2026-03-07 19:07:08,122 DEBUG Sending HTTP Request: POST https://openrouter.ai/api/v1/chat/completions
+2026-03-07 19:07:08,123 DEBUG connect_tcp.started host='openrouter.ai' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-07 19:07:08,137 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10ca967a0>
+2026-03-07 19:07:08,137 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x10c376e40> server_hostname='openrouter.ai' timeout=5.0
+2026-03-07 19:07:08,154 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10ca96830>
+2026-03-07 19:07:08,154 DEBUG send_request_headers.started request=<Request [b'POST']>
+2026-03-07 19:07:08,154 DEBUG send_request_headers.complete
+2026-03-07 19:07:08,154 DEBUG send_request_body.started request=<Request [b'POST']>
+2026-03-07 19:07:08,154 DEBUG send_request_body.complete
+2026-03-07 19:07:08,155 DEBUG receive_response_headers.started request=<Request [b'POST']>
+2026-03-07 19:07:09,489 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 07 Mar 2026 22:07:09 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Origin', b'*'), (b'Permissions-Policy', b'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")'), (b'Referrer-Policy', b'no-referrer, strict-origin-when-cross-origin'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9d8ce94c0b7bf203-GRU')])
+2026-03-07 19:07:09,491 INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 19:07:09,491 DEBUG receive_response_body.started request=<Request [b'POST']>
+2026-03-07 19:07:10,068 DEBUG receive_response_body.complete
+2026-03-07 19:07:10,068 DEBUG response_closed.started
+2026-03-07 19:07:10,069 DEBUG response_closed.complete
+2026-03-07 19:07:10,069 DEBUG HTTP Response: POST https://openrouter.ai/api/v1/chat/completions "200 OK" Headers({'date': 'Sat, 07 Mar 2026 22:07:09 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-allow-origin': '*', 'permissions-policy': 'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")', 'referrer-policy': 'no-referrer, strict-origin-when-cross-origin', 'x-content-type-options': 'nosniff', 'content-encoding': 'gzip', 'server': 'cloudflare', 'cf-ray': '9d8ce94c0b7bf203-GRU'})
+2026-03-07 19:07:10,069 DEBUG request_id: None
+2026-03-07 19:07:10,078 DEBUG Roast: '"Ignore DEBUG logs" — so you want me to guess which logs file, in what format, using which tool? Riveting specificity.'
+2026-03-07 19:07:10,296 DEBUG close.started
+2026-03-07 19:07:10,296 DEBUG close.complete
+2026-03-07 19:07:11,188 DEBUG Speaking via pocket-tts
+2026-03-07 19:07:11,214 INFO Loading sentencepiece tokenizer from hf://kyutai/pocket-tts-without-voice-cloning/tokenizer.model@d4fdd22ae8c8e1cb3634e150ebeff1dab2d16df3
+2026-03-07 19:07:11,489 INFO Loading TTSModel weights from hf://kyutai/pocket-tts/tts_b6369a24.safetensors@427e3d61b276ed69fdd03de0d185fa8a8d97fc5b
+2026-03-07 19:07:11,493 DEBUG connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=10 socket_options=None
+2026-03-07 19:07:11,564 DEBUG connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x118093d30>
+2026-03-07 19:07:11,564 DEBUG start_tls.started ssl_context=<ssl.SSLContext object at 0x118246b40> server_hostname='huggingface.co' timeout=10
+2026-03-07 19:07:11,579 DEBUG start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x118093d60>
+2026-03-07 19:07:11,579 DEBUG send_request_headers.started request=<Request [b'HEAD']>
+2026-03-07 19:07:11,579 DEBUG send_request_headers.complete
+2026-03-07 19:07:11,579 DEBUG send_request_body.started request=<Request [b'HEAD']>
+2026-03-07 19:07:11,579 DEBUG send_request_body.complete
+2026-03-07 19:07:11,579 DEBUG receive_response_headers.started request=<Request [b'HEAD']>
+2026-03-07 19:07:11,724 DEBUG receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Content-Type', b'text/plain; charset=utf-8'), (b'Content-Length', b'125'), (b'Connection', b'keep-alive'), (b'Date', b'Sat, 07 Mar 2026 22:07:11 GMT'), (b'ETag', b'W/"7d-0f0Bz1u9F3hT/i/kzLThlDJ6G1w"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-69aca18f-56bf04c878ddb79e07fb4e9c;d3727133-ea87-45a9-8934-2828b21302a1'), (b'RateLimit', b'"resolvers";r=2999;t=237'), (b'RateLimit-Policy', b'"fixed window";"resolvers";q=3000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'GatedRepo'), (b'X-Error-Message', b'Access to model kyutai/pocket-tts is restricted. You must have access to it and be authenticated to access it. Please log in.'), (b'WWW-Authenticate', b'Bearer realm="Authentication required", charset="UTF-8"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 ae1b720146d352b49aa066c4ae3d562c.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'GRU1-P3'), (b'X-Amz-Cf-Id', b'0xwuezx1FeMJSd6qWWzoLnA3J1WSvWPXVqGhxmOvI33f_5d4gSfv0w==')])
+2026-03-07 19:07:11,724 INFO HTTP Request: HEAD https://huggingface.co/kyutai/pocket-tts/resolve/427e3d61b276ed69fdd03de0d185fa8a8d97fc5b/tts_b6369a24.safetensors "HTTP/1.1 401 Unauthorized"
+2026-03-07 19:07:11,724 DEBUG receive_response_body.started request=<Request [b'HEAD']>
+2026-03-07 19:07:11,724 DEBUG receive_response_body.complete
+2026-03-07 19:07:11,724 DEBUG response_closed.started
+2026-03-07 19:07:11,724 DEBUG response_closed.complete
+2026-03-07 19:07:11,779 INFO TTS Model loaded successfully. Its size is 471.0 MB
+2026-03-07 19:07:11,782 INFO starting timer now!
+2026-03-07 19:07:11,811 INFO Prompting text took 25 ms
+2026-03-07 19:07:11,828 DEBUG                               Decoded 80 ms of audio with mimi in 9 ms
+2026-03-07 19:07:11,836 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:07:11,844 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,852 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,860 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:07:11,868 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,876 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,884 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,892 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,899 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,907 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,915 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,923 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,931 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:07:11,939 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,948 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:07:11,956 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,963 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,971 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,978 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,986 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:11,994 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,001 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,009 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,016 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,024 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,032 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,039 DEBUG                               Decoded 80 ms of audio with mimi in 6 ms
+2026-03-07 19:07:12,046 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,054 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,062 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,069 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,076 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,084 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,091 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,099 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,106 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,114 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,122 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,129 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,136 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,144 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,152 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,159 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,167 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,174 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,181 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,189 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,197 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,205 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,213 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,221 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,228 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,236 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,244 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,251 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,259 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,266 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,274 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,281 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,289 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,297 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,305 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,312 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,319 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,327 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,335 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,342 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,350 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,358 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,365 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,373 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,380 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,388 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,396 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,404 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,412 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,420 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,428 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:07:12,435 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,443 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,451 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,459 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,467 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,474 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,482 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,489 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,497 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:07:12,506 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,514 DEBUG                               Decoded 80 ms of audio with mimi in 8 ms
+2026-03-07 19:07:12,521 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,529 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,536 INFO Average generation step time: 7 ms
+2026-03-07 19:07:12,537 DEBUG                               Decoded 80 ms of audio with mimi in 7 ms
+2026-03-07 19:07:12,542 DEBUG                               Decoded 80 ms of audio with mimi in 4 ms
+2026-03-07 19:07:12,542 INFO Waiting for mimi decoder to finish took 0 ms
+2026-03-07 19:07:12,542 INFO Generated: 7520 ms of audio in 759 ms so 9.91x faster than real-time
+2026-03-07 19:07:20,207 DEBUG close.started
+2026-03-07 19:07:20,207 DEBUG close.complete
+2026-03-07 19:07:27,430 WARNING Stop hook payload: {"session_id": "f0d3f0dd-a9a8-4941-a42f-bb0c830f78d2", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-cursed-claude-code/f0d3f0dd-a9a8-4941-a42f-bb0c830f78d2.jsonl", "cwd": "/Users/caique.silva/Code/Personal/cursed-claude-code", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "`user_prompt_submit` now uses the default `WARNING` level like the other hooks."}
+2026-03-07 19:12:56,883 WARNING Stop hook payload: {"session_id": "f0d3f0dd-a9a8-4941-a42f-bb0c830f78d2", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-cursed-claude-code/f0d3f0dd-a9a8-4941-a42f-bb0c830f78d2.jsonl", "cwd": "/Users/caique.silva/Code/Personal/cursed-claude-code", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Done. Five personalities defined in `shared.PERSONALITIES`, picked randomly each invocation:\n\n| Personality | Vibe |\n|---|---|\n| `roaster` | Original \u2014 sharp, cutting, mocking |\n| `overenthusiastic` | Absurdly excited about everything |\n| `passive_aggressive` | Backhanded compliments, thinly veiled contempt |\n| `existential` | Philosophical crisis mode |\n| `conspiracy` | Cryptic hints that something bigger is going on |\n\nEach personality has prompts for all three hook events (`prompt_submit`, `stop`, `task_completed`). Adding new ones is just adding an entry to `PERSONALITIES` in `shared.py`."}
+2026-03-07 19:47:08,428 WARNING Stop hook payload: {"session_id": "f0d3f0dd-a9a8-4941-a42f-bb0c830f78d2", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-cursed-claude-code/f0d3f0dd-a9a8-4941-a42f-bb0c830f78d2.jsonl", "cwd": "/Users/caique.silva/Code/Personal/cursed-claude-code", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Committed and pushed as `95994ee`."}
+2026-03-07 20:28:21,231 ERROR pocket-tts failed, falling back to say
+Traceback (most recent call last):
+  File "/Users/caique.silva/Code/Personal/cursed-claude-code/hooks/shared.py", line 149, in speak
+    speak_pocket_tts(text)
+  File "/Users/caique.silva/Code/Personal/cursed-claude-code/hooks/shared.py", line 127, in speak_pocket_tts
+    import sounddevice as sd
+ModuleNotFoundError: No module named 'sounddevice'
+2026-03-07 20:29:28,328 WARNING Stop hook payload: {"session_id": "a62728d9-4119-4e25-823c-0eb735795d21", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-2048-vibe-coded/a62728d9-4119-4e25-823c-0eb735795d21.jsonl", "cwd": "/Users/caique.silva/Code/Personal/2048-vibe-coded", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "The game is ready at `index.html`. Open it in a browser to play.\n\n**Features:**\n- 4x4 grid with smooth tile animations (appear + merge pop)\n- Arrow key controls + touch/swipe support for mobile\n- Score and best score (persisted via `localStorage`)\n- Win detection at 2048, game-over detection when no moves remain\n- Authentic color scheme matching the original game\n- \"Keep going\" after winning (overlay dismisses but game continues)"}
+2026-03-07 20:30:33,182 ERROR pocket-tts failed, falling back to say
+Traceback (most recent call last):
+  File "/Users/caique.silva/Code/Personal/cursed-claude-code/hooks/shared.py", line 149, in speak
+    speak_pocket_tts(text)
+  File "/Users/caique.silva/Code/Personal/cursed-claude-code/hooks/shared.py", line 127, in speak_pocket_tts
+    import sounddevice as sd
+ModuleNotFoundError: No module named 'sounddevice'
+2026-03-07 20:35:18,628 WARNING Stop hook payload: {"session_id": "a62728d9-4119-4e25-823c-0eb735795d21", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-2048-vibe-coded/a62728d9-4119-4e25-823c-0eb735795d21.jsonl", "cwd": "/Users/caique.silva/Code/Personal/2048-vibe-coded", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Three bugs fixed:\n\n| Bug | Before | After |\n|-----|--------|-------|\n| Direction rotations | `up:1, down:3` | `up:3, down:1` (up/down were swapped) |\n| Inverse position formula | `[pc, SIZE-1-pr]` | `[SIZE-1-pc, pr]` (CCW step was computed backwards) |\n| Inverse iteration count | `(4-rotations)%4` | `rotations` (was applying wrong number of steps) |\n\nAlso fixed the win overlay UX \u2014 there's now a \"Keep Going\" button that dismisses it without restarting, and \"Play Again\" still resets the game."}
+2026-03-07 20:37:09,367 ERROR pocket-tts failed, falling back to say
+Traceback (most recent call last):
+  File "/Users/caique.silva/Code/Personal/cursed-claude-code/hooks/shared.py", line 149, in speak
+    speak_pocket_tts(text)
+  File "/Users/caique.silva/Code/Personal/cursed-claude-code/hooks/shared.py", line 127, in speak_pocket_tts
+    import sounddevice as sd
+ModuleNotFoundError: No module named 'sounddevice'
+2026-03-07 20:38:43,272 WARNING Stop hook payload: {"session_id": "a62728d9-4119-4e25-823c-0eb735795d21", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-2048-vibe-coded/a62728d9-4119-4e25-823c-0eb735795d21.jsonl", "cwd": "/Users/caique.silva/Code/Personal/2048-vibe-coded", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Key changes:\n\n- **Removed the floating `.tiles` overlay** \u2014 tiles now live directly inside their `.cell` using `position: absolute; inset: 0`, so they're always perfectly sized and aligned with their background slot. No more dual-layer alignment issues.\n- **Removed `id=\"tiles\"` and `id=\"board\"`** \u2014 the cell array (`cells[]`) is used directly for O(1) access to each cell by `[row, col]`.\n- The game logic (rotation fixes) from before is preserved."}
+2026-03-07 20:42:34,365 ERROR pocket-tts failed, falling back to say
+Traceback (most recent call last):
+  File "/Users/caique.silva/Code/Personal/cursed-claude-code/hooks/shared.py", line 149, in speak
+    speak_pocket_tts(text)
+  File "/Users/caique.silva/Code/Personal/cursed-claude-code/hooks/shared.py", line 127, in speak_pocket_tts
+    import sounddevice as sd
+ModuleNotFoundError: No module named 'sounddevice'
+2026-03-07 20:49:47,828 WARNING Stop hook payload: {"session_id": "a62728d9-4119-4e25-823c-0eb735795d21", "transcript_path": "/Users/caique.silva/.claude/projects/-Users-caique-silva-Code-Personal-2048-vibe-coded/a62728d9-4119-4e25-823c-0eb735795d21.jsonl", "cwd": "/Users/caique.silva/Code/Personal/2048-vibe-coded", "permission_mode": "acceptEdits", "hook_event_name": "Stop", "stop_hook_active": false, "last_assistant_message": "Here's what changed and why:\n\n**Core architectural change:** Tiles are now persistent DOM elements in a floating `.tile-layer`. Instead of destroying and recreating tiles on every move, each tile has a unique ID that is tracked through slides and merges.\n\n**Animations:**\n- **Sliding** \u2014 CSS `transition: left 100ms ease, top 100ms ease` on each tile. When a move happens, we update `left`/`top` and the browser smoothly interpolates.\n- **Merging** \u2014 the absorbed tile slides to the merge destination alongside the surviving tile, then is removed after the slide completes. The surviving tile then pops with `scale(1.18) \u2192 scale(1)`.\n- **Spawning** \u2014 new tiles appear with `scale(0) \u2192 scale(1)` after the slide finishes.\n- **Input lock** \u2014 an `animating` flag prevents queuing overlapping moves mid-animation.\n- **Resize** \u2014 `window.resize` remeasures the grid and repositions all tiles instantly (no transition)."}

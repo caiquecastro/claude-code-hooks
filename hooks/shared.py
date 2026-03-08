@@ -8,7 +8,9 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
-LOG_FILE = ROOT / "hook.log"
+LOGS_DIR = ROOT / "logs"
+LOGS_DIR.mkdir(exist_ok=True)
+LOG_FILE = LOGS_DIR / "hook.log"
 
 MODEL = "anthropic/claude-haiku-4-5"
 VOICE = "alba"  # catalog voices: alba, marius, javert, jean, fantine, cosette, eponine, azelma
