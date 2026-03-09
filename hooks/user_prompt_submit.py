@@ -9,7 +9,14 @@ import json
 import logging
 import sys
 
-from shared import MODEL, get_openrouter_client, get_personality, setup_logging, speak
+from shared import (
+    MODEL,
+    get_openrouter_client,
+    get_personality,
+    is_enabled,
+    setup_logging,
+    speak,
+)
 
 setup_logging()
 log = logging.getLogger(__name__)
@@ -33,10 +40,13 @@ def get_roast(prompt: str) -> str:
 
 
 def main():
-    log.info("Hook triggered")
+    log.info("User prompt submit hook triggered")
     try:
         payload = json.load(sys.stdin)
         log.debug("Payload: %r", payload)
+
+        if not is_enabled():
+            sys.exit(0)
     except json.JSONDecodeError:
         sys.exit(0)
 
@@ -44,7 +54,7 @@ def main():
     if not prompt:
         sys.exit(0)
 
-    log.debug("Hook triggered")
+    log.debug("Getting roast and speaking")
     try:
         roast = get_roast(prompt)
     except Exception:

@@ -113,6 +113,14 @@ def setup_logging(level: int = logging.WARNING) -> None:
     )
 
 
+def is_enabled() -> bool:
+    import os
+    from dotenv import load_dotenv
+
+    load_dotenv(ROOT / ".env")
+    return os.getenv("HOOKS_ENABLED", "true").strip().lower() not in ("false", "0", "no")
+
+
 def get_openrouter_client():
     import os
     from dotenv import load_dotenv

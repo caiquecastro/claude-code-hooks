@@ -7,7 +7,7 @@ import json
 import logging
 import sys
 
-from shared import MODEL, get_openrouter_client, get_personality, speak, setup_logging
+from shared import MODEL, get_openrouter_client, get_personality, is_enabled, speak, setup_logging
 
 setup_logging()
 log = logging.getLogger(__name__)
@@ -27,6 +27,8 @@ def get_quip() -> str:
 
 
 def main():
+    if not is_enabled():
+        sys.exit(0)
     try:
         payload = json.load(sys.stdin)
     except json.JSONDecodeError:
