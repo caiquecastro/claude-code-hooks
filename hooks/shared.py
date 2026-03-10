@@ -3,9 +3,13 @@ Shared utilities for Claude Code hooks.
 """
 
 import logging
+import os
 import random
 import subprocess
 from pathlib import Path
+
+from dotenv import load_dotenv
+from openai import OpenAI
 
 ROOT = Path(__file__).parent.parent
 LOGS_DIR = ROOT / "logs"
@@ -113,20 +117,14 @@ def setup_logging(level: int = logging.WARNING) -> None:
     )
 
 
-def is_enabled() -> bool:
-    import os
-    from dotenv import load_dotenv
+load_dotenv(ROOT / ".env")
 
-    load_dotenv(ROOT / ".env")
+
+def is_enabled() -> bool:
     return os.getenv("HOOKS_ENABLED", "true").strip().lower() not in ("false", "0", "no")
 
 
-def get_openrouter_client():
-    import os
-    from dotenv import load_dotenv
-    from openai import OpenAI
-
-    load_dotenv(ROOT / ".env")
+def get_openrouter_client() -> OpenAI:
     return OpenAI(
         api_key=os.environ["OPENROUTER_API_KEY"],
         base_url="https://openrouter.ai/api/v1",
