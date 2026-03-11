@@ -1,4 +1,7 @@
 #!/usr/bin/env -S uv run
+# /// script
+# dependencies = ["openai", "python-dotenv", "pocket-tts", "sounddevice"]
+# ///
 """
 Claude Code TaskCompleted hook — speaks a snarky remark when a task is marked complete.
 """
