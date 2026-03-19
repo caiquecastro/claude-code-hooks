@@ -153,8 +153,13 @@ def speak_say(text: str) -> None:
 
 
 def speak(text: str) -> None:
-    try:
-        speak_pocket_tts(text)
-    except Exception:
-        log.exception("pocket-tts failed, falling back to say")
-        speak_say(text)
+    import threading
+
+    def _speak() -> None:
+        try:
+            speak_pocket_tts(text)
+        except Exception:
+            log.exception("pocket-tts failed, falling back to say")
+            speak_say(text)
+
+    threading.Thread(target=_speak, daemon=True).start()
