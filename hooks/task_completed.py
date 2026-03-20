@@ -10,7 +10,7 @@ import json
 import logging
 import sys
 
-from shared import MODEL, get_openrouter_client, get_personality, is_enabled, speak, setup_logging
+from shared import MODEL, detach, get_openrouter_client, get_personality, is_enabled, speak, setup_logging
 
 setup_logging()
 log = logging.getLogger(__name__)
@@ -38,6 +38,8 @@ def main():
         sys.exit(0)
 
     log.warning("TaskCompleted hook payload: %s", json.dumps(payload))
+
+    detach()
 
     try:
         quip = get_quip()

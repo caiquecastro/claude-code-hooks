@@ -10,7 +10,7 @@ import json
 import logging
 import sys
 
-from shared import MODEL, get_openrouter_client, get_personality, is_enabled, speak, setup_logging
+from shared import MODEL, detach, get_openrouter_client, get_personality, is_enabled, speak, setup_logging
 
 setup_logging()
 log = logging.getLogger(__name__)
@@ -42,6 +42,8 @@ def main():
     # Only fire if Claude actually did work (not a no-op stop)
     if not payload.get("stop_hook_active", True):
         sys.exit(0)
+
+    detach()
 
     try:
         quip = get_quip()

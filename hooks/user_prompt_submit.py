@@ -14,6 +14,7 @@ import sys
 
 from shared import (
     MODEL,
+    detach,
     get_openrouter_client,
     get_personality,
     is_enabled,
@@ -56,6 +57,8 @@ def main():
     prompt = payload.get("prompt", "").strip()
     if not prompt:
         sys.exit(0)
+
+    detach()
 
     log.debug("Getting roast and speaking")
     try:

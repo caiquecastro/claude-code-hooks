@@ -6,6 +6,7 @@ import logging
 import os
 import random
 import subprocess
+import sys
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -153,13 +154,14 @@ def speak_say(text: str) -> None:
 
 
 def speak(text: str) -> None:
-    import threading
+    try:
+        speak_pocket_tts(text)
+    except Exception:
+        log.exception("pocket-tts failed, falling back to say")
+        speak_say(text)
 
-    def _speak() -> None:
-        try:
-            speak_pocket_tts(text)
-        except Exception:
-            log.exception("pocket-tts failed, falling back to say")
-            speak_say(text)
 
-    threading.Thread(target=_speak, daemon=True).start()
+def detach() -> None:
+    """Fork and exit the parent process so the hook returns immediately to Claude Code."""
+    if os.fork() != 0:
+        sys.exit(0)
