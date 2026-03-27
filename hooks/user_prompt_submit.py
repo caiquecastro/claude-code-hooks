@@ -52,6 +52,7 @@ def main():
         if not is_enabled():
             sys.exit(0)
     except json.JSONDecodeError:
+        log.warning("Invalid JSON payload, exiting")
         sys.exit(0)
 
     prompt = payload.get("prompt", "").strip()

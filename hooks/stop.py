@@ -10,7 +10,15 @@ import json
 import logging
 import sys
 
-from shared import MODEL, detach, get_openrouter_client, get_personality, is_enabled, speak, setup_logging
+from shared import (
+    MODEL,
+    detach,
+    get_openrouter_client,
+    get_personality,
+    is_enabled,
+    setup_logging,
+    speak,
+)
 
 setup_logging()
 log = logging.getLogger(__name__)
