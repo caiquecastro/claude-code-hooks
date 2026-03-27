@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Cursed Claude Code Hooks — a collection of Claude Code hooks that intercept workflow events (prompt submission, response completion, task completion), generate snarky commentary via an LLM (OpenRouter), and play it aloud via text-to-speech.
+Cursed Hooks — a collection of hooks for Claude Code and Codex that intercept workflow events (prompt submission, response completion, task completion), generate snarky commentary via an LLM (OpenRouter), and play it aloud via text-to-speech. Both tools share the same hook format.
 
 ## Commands
 
