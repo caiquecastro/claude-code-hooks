@@ -40,7 +40,7 @@ def main():
     log.warning("Stop hook payload: %s", json.dumps(payload))
 
     # Only fire if Claude actually did work (not a no-op stop)
-    if not payload.get("stop_hook_active", True):
+    if payload.get("stop_hook_active", False):
         sys.exit(0)
 
     detach()
